@@ -1,2 +1,2 @@
 # simple-chatbot
-Learning Introduction for Natural Language Processing
+Little Project for learning Natural Language Processing
