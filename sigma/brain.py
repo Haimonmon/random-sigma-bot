@@ -1,4 +1,5 @@
 import re
+import random
 
 from rich.text import Text
 from rich.panel import Panel
@@ -10,6 +11,35 @@ from typing import Literal, Dict
 from .chat_saver import save_chat, load_chat
 
 console = Console()
+
+def generate_bot_response(prompt: str) -> None:
+    """ Definetly answers you 👌, but just randomly lmao. """
+
+    # * For now since memory no keywords 
+    introduction_messages = [
+        "Chat Ahead . . .   ",
+        " Just hate being existed -_-",
+        "Just ask bruhhh . . .   ",
+        " Not a smart ass, just ask 👌"
+    ]
+
+    print("\033[F\033[K", end='')
+
+    generate_chat_head(
+        role = "prompter",
+        response = prompt,
+        prompter_name = "Haimonmon",
+        auto_save = True,
+        file_name = "chat1.json"
+    )
+
+    generate_chat_head(
+        role = "bot",
+        response = random.choice(introduction_messages),
+        bot_name = "Chad",
+        auto_save = True,
+        file_name = "chat1.json"
+    )
 
 def generate_previous_chat_heads(file_name:str) -> None:
      for chat_head_response in load_chat(file_name):
@@ -50,8 +80,8 @@ def generate_chat_head(role: Literal["prompter", "bot"], response: str, prompter
             return
     
     if role == "prompter":
-        chat_head_text = Text(chat_head_response, style = "bold red")
-        chat_head_panel = Panel.fit(chat_head_text, border_style="red")
+        chat_head_text = Text(chat_head_response, style = "bold orange1")
+        chat_head_panel = Panel.fit(chat_head_text, border_style="orange1")
     else:
         chat_head_text = Text(chat_head_response, style="bold magenta")
         chat_head_panel = Panel.fit(chat_head_text, border_style="magenta")
