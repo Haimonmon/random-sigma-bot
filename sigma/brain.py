@@ -5,9 +5,9 @@ from rich.panel import Panel
 from rich.align import Align
 from rich.console import Console
 
-from chat_saver import save_chat, load_chat
-
 from typing import Literal, Dict
+
+from .chat_saver import save_chat, load_chat
 
 console = Console()
 

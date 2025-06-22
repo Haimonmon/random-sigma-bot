@@ -6,7 +6,7 @@ from pyfiglet import Figlet
 from rich.panel import Panel
 from rich.console import Console
 
-from brain import generate_chat_head, generate_previous_chat_heads
+from .brain import generate_chat_head, generate_previous_chat_heads
 
 console = Console()
 
@@ -16,10 +16,10 @@ def display_header(header_text: str, sub_header_text: str, title_header_text: st
     figlet = Figlet(font='alligator')
     logo = figlet.renderText(header_text)
     
-    console.print(Panel.fit(f"[bold magenta] {logo} \n {"_" * 75} \n ✦ I dont know what im sayin, but im willing to answer 💀👌. [/bold magenta]", border_style = "magenta", title = title_header_text, padding=1))
+    console.print(Panel.fit(f"[bold magenta] {logo} \n {"_" * 75} \n {sub_header_text} [/bold magenta]", border_style = "magenta", title = title_header_text, padding=1))
 
 
-def display_main_menu() -> None:
+def display_main_menu(prompter_name) -> None:
     """ display option """
 
     introduction_messages = [
@@ -29,21 +29,26 @@ def display_main_menu() -> None:
         " Not a smart ass, just ask 👌"
     ]
 
-    # generate_chat_head(role = "bot", response = random.choice(introduction_messages))
-    generate_previous_chat_heads("chat1.json")
+    generate_chat_head(role = "bot", response = random.choice(introduction_messages), prompter_name = prompter_name)
+    # generate_previous_chat_heads("chat1.json")
     console.input("[bold red] [ 👑 You ] [/] : ")
 
 
 def sigma_bot(your_name: str = "Hitler") -> None:
     """ Landing Page """
 
-    display_header("S | G M A", "* Just died from cringe *", "✦ Jet 2 Holiday ✦")
-    display_main_menu()
+    display_header(
+        header_text = "S | G M A", 
+        sub_header_text = "✦ I dont know what im sayin, but im willing to answer 💀👌.", 
+        title_header_text = "✦ Jet 2 Holiday ✦"
+    )
+    display_main_menu(prompter_name = your_name)
 
 if __name__ == "__main__":
       sigma_bot()
 
 # TODO:
+# ! Chat is not functional Yet
 # ! Make sure the prompter will have a response always even before saving its chat head
 
 # * References:
