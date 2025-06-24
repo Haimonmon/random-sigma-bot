@@ -6,11 +6,22 @@ from rich.panel import Panel
 from rich.align import Align
 from rich.console import Console
 
-from typing import Literal, Dict
+from typing import Literal, Dict, List
 
-from .chat_saver import save_chat, load_chat
+from .chat_saver import save_chat, load_chat, load_keyword
 
 console = Console()
+
+
+def tokenization(prompt: str) -> List:
+    """ Seperating each words on the prompt """
+    pass
+
+
+def check_response(keywords: Dict) -> None:
+    for response in keywords.items():
+        print(response)
+
 
 def generate_bot_response(prompt: str) -> None:
     """ Definetly answers you 👌, but just randomly lmao. """
@@ -33,6 +44,10 @@ def generate_bot_response(prompt: str) -> None:
         file_name = "chat1.json"
     )
 
+    keywords: Dict = load_keyword()
+
+    check_response(keywords)
+
     generate_chat_head(
         role = "bot",
         response = random.choice(introduction_messages),
@@ -40,6 +55,7 @@ def generate_bot_response(prompt: str) -> None:
         auto_save = True,
         file_name = "chat1.json"
     )
+
 
 def generate_previous_chat_heads(file_name:str) -> None:
      for chat_head_response in load_chat(file_name):

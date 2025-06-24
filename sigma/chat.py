@@ -8,7 +8,7 @@ from pyfiglet import Figlet
 from rich.panel import Panel
 from rich.console import Console
 
-from .chat_saver import load_chat
+from .chat_saver import load_chat, load_keyword
 from .brain import generate_chat_head, generate_previous_chat_heads, generate_bot_response
 
 console = Console()
@@ -18,8 +18,9 @@ def display_header(header_text: str, sub_header_text: str, title_header_text: st
 
     figlet = Figlet(font='alligator')
     logo = figlet.renderText(header_text)
+    line_separator = "_" * 75
     
-    console.print(Panel.fit(f"[bold magenta] {logo} \n {"_" * 75} \n {sub_header_text} [/bold magenta]", border_style = "magenta", title = title_header_text, padding=1))
+    console.print(Panel.fit(f"[bold magenta] {logo} \n {line_separator} \n {sub_header_text} [/bold magenta]", border_style = "magenta", title = title_header_text, padding=1))
 
 
 def display_chat_session(prompter_name, bot_name, selected_chat_session: str) -> None:
@@ -55,7 +56,7 @@ def display_chat_session(prompter_name, bot_name, selected_chat_session: str) ->
 
         generate_bot_response(prompt = response)
 
-        if response in ["bye", "goodbye", "seeyah"]:
+        if response in load_keyword()["farewell"]["keyword"]:
             break
 
 
@@ -63,7 +64,7 @@ def sigma_bot(your_name: str = "Hitler", bot_name = "Chad") -> None:
     """ Landing Page """
 
     display_header(
-        header_text = "S | G M A", 
+        header_text = "l | G M A", 
         sub_header_text = "✦ I dont know what im sayin, but im willing to answer 💀👌.", 
         title_header_text = "✦ Jet 2 Holiday ✦"
     )
