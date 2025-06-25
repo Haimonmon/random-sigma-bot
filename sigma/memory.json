@@ -1,3 +1,57 @@
 {
-    
+    "greetings": {
+    "keyword": [
+        "hello", "hi", "hey", "yo", "whats", "up", "sup", "good" ,"morning",
+        "good" ,"afternoon", "good", "evening", "hiya", "howdy", "heyo"
+    ],
+    "response": [
+        "Heyyy! What's cookin'? 👋",
+        "Yo! Wassup? 😎",
+        "Hi there! Hope you're vibin' today 🌞",
+        "Hello hello! Ready to chat? 💬",
+        "Howdy partner 🤠",
+        "Good day to you! 🌟",
+        "Wassup! Hit me with your thoughts 💭",
+        "Hey there! Let's talk about something cool 🔥",
+        "Heya! What brings you here today? 😄",
+        "Yo yo yo! What's on your mind today?"
+        ]
+    },
+    "farewell": {
+        "keyword": [
+            "bye", "goodbye", "see ya", "seen you" ,"ya", "later", "catch you later", "later", 
+            "peace", "peace out", "ciao", "sayonara", "adios nigger", "smell ya later", "talk to you later", "gtg", 
+            "g2g", "i'm out", "i gotta go", "laters", "farewell", "fare", "well", "take care", "i'll be going", "im leaving", 
+            "gotta dip", "bye for now", "sayonara madafakas!!", "exit"
+        ],
+        "response": [
+            "It has been an honor vibing with you. I shall now log off with the elegance of a Windows shutdown sound. 🫡",
+            "Respectfully, I must now disappear like your motivation on a Monday morning. Stay safe out there, king 👑.",
+            "Time for me to dip — thank you for your attention and energy. It's been real, fr fr. No cap 🫱🔥.",
+            "Signing off like a true professional-slash-goblin hybrid. May your bandwidth be strong and your vibes immaculate 📡✨.",
+            "It's been an absolute pleasure. I'm off to touch grass and recalibrate my soul. Until we link again 🧘🌱.",
+            "I regret to inform you that I must vanish. However, I leave with nothing but gratitude and rizz 💼✌️.",
+            "Farewell, bestie. I'm professionally clocking out and emotionally spiraling, respectfully 🙃.",
+            "As I take my leave, may your hustle remain strong, your haters silent, and your skincare flawless 💅📈.",
+            "I'm heading out — not ghosting, just temporarily vanishing for character development. TYSM for the vibes 💫.",
+            "Thank you for this enlightening interaction. I must now retreat into the abyss to charge my social battery 🔋🫥.",
+            "Logging off now. It's not goodbye, it's brb, after I eat snacks and mentally recover from everything' 🍪🧠.",
+            "This convo has been elite. Time to vanish like a rare NFT project. Much respect, peace and blessings 📉✨."
+        ]
+    }, 
+    "default": {
+        "keyword": [],
+        "response": [
+            "uhh what now? 🤨",
+            "yo that went way over my head 😵‍💫",
+            "bruh... say that again but like, human pls 😅",
+            "i'm not built for that kinda question fr 💀",
+            "not me sitting here confused af 😭",
+            "huh? that ain't in my dictionary 🧍‍♂️",
+            "my brain just blue-screened bro 💻💥",
+            "wait wha- 😳 say it slower maybe?",
+            "you're wildin' rn, idk what that means 💀",
+            "ngl that one lost me... try again? 👀"
+        ]
+    }
 }
