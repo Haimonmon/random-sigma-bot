@@ -10,17 +10,17 @@ def create_new_file(file_name) -> None:
     pass
 
 
-def load_keyword() ->   None:
+def load_keyword() -> Dict:
     """ loads keywords """
 
-    with open("sigma/memory.json") as file:
+    with open("sigma/memory.json",encoding="utf-8") as file:
         return json.load(file)
 
 
 def load_chat(file: str) -> Dict:
     """ Loads previous chats """
     
-    with open(f"{folder_directory}{file}", 'r') as file:
+    with open(f"{folder_directory}{file}", 'r',encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -39,8 +39,8 @@ def save_chat(file: str, response: str) -> bool:
 
         loaded_chat_heads.append(response)
 
-        with open(f"{folder_directory}{file}", 'w') as file:
-            json.dump(loaded_chat_heads, file, indent=4)
+        with open(f"{folder_directory}{file}", 'w',encoding="utf-8") as file:
+            json.dump(loaded_chat_heads, file, indent = 4)
 
         return True
     except Exception as e:
