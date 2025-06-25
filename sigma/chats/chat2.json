@@ -1,6 +1,18 @@
 [
-    "\n [ bot ] : Kahatdogan awit ka \ud83d\udd25\u2728    \n",
-    "\n [ prompter ] : Mighty bond \ud83d\udd25\u2728    \n",
-    "\n [ bot ] : Pinagsasabi neto \ud83d\uddff    \n",
-    "\n [ prompter ] : Bruh.    \n"
+    {
+        "role": "prompter",
+        "message": "see yah \n"
+    },
+    {
+        "role": "bot",
+        "message": "As I take my leave, may your hustle remain strong, your haters silent, and your skincare flawless \ud83d\udc85\ud83d\udcc8. \n"
+    },
+    {
+        "role": "prompter",
+        "message": "goodbye"
+    },
+    {
+        "role": "bot",
+        "message": "Thank you for this enlightening interaction. I must now retreat into the abyss to charge my social battery \ud83d\udd0b\ud83e\udee5."
+    }
 ]
