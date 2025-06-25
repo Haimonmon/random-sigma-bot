@@ -3,10 +3,18 @@ import json
 
 from typing import Dict, Literal
 
-folder_directory = r"sigma\chats\/"
+folder_directory = r"sigma/chats/"
+
 
 def create_new_file(file_name) -> None:
     pass
+
+
+def load_keyword() -> Dict:
+    """ loads keywords """
+
+    with open("sigma/memory.json", "r", encoding="utf-8") as file:
+        return json.load(file)
 
 
 def load_chat(file: str) -> Dict:
@@ -32,7 +40,7 @@ def save_chat(file: str, response: str) -> bool:
         loaded_chat_heads.append(response)
 
         with open(f"{folder_directory}{file}", 'w') as file:
-            json.dump(loaded_chat_heads, file, indent=4)
+            json.dump(loaded_chat_heads, file, indent = 4)
 
         return True
     except Exception as e:
