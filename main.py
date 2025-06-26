@@ -1,6 +1,6 @@
-import sigma as rizz
+from chat import sigma_bot
 
 if __name__ == "__main__":
-      rizz.sigma_bot(
+      sigma_bot(
             your_name = "Haimonmon"
       )
