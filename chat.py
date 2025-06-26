@@ -1,8 +1,10 @@
 import time
 import random
 
+# * Our own chatbot library 🤙✨
 import sigma as dizzy
 
+# * External Libraries for Terminal style customization 🌾✨
 from pyfiglet import Figlet
 
 from rich.text import Text
@@ -10,23 +12,32 @@ from rich.live import Live
 from rich.panel import Panel
 from rich.console import Console
 
-
 from typing import List, Dict, Literal
 
+# * This will allow rich library to print its output on the console or terminal
 console = Console()
 
 def generate_bot_response(prompt: str, prompter_name: str, bot_name: str) -> None:
-    """ Displays chat heads of prompter prompt and bot response """
+    """ 
+    Displays chat heads of user prompt and bot response at the same time. 
+    ```python
+    (prompt: str) -> User prompt.
+    (prompter_name: str) -> Prompter or user name.
+    (bot_name: str) -> Name of the bot.
+    ```
+    """
 
+    # * Move the "input" at the bottom of the chatheads
     print("\033[F\033[K", end='')
 
+    # * Generates user prompt chat head
     generate_chat_head(
         role = "prompter",
         response = prompt,
         prompter_name = prompter_name,
     )
 
-    # * Asking now the bot with some answers on user prompt and display its chat head
+    # * Generates bot chat head with asking the chatbot for some response.
     generate_chat_head(
         role = "bot",
         response = dizzy.ask(prompt),
@@ -36,10 +47,20 @@ def generate_bot_response(prompt: str, prompter_name: str, bot_name: str) -> Non
 
 
 def generate_previous_chats(file_name: str, prompter_name: str, bot_name: str) -> None:
-    """ loads previous conversation of the chatbot and the prompter within the json file """
-    remembered_messages: List = dizzy.get_remembered_messages(file_name)
-    for chat_head_response in remembered_messages:
+    """
+    loads previous conversation between the user and chatbot within the given json file.
+    ```python
+    (file_name: str) -> Json file name where the previous chat located.
+    (prompter_name: str) -> Prompter or user name.
+    (bot_name: str) -> Name of the bot.
+    ```
+    """
 
+    # * Loads previous chat heads from the choosed json file.
+    remembered_messages: List = dizzy.get_remembered_messages(file_name)
+
+    for chat_head_response in remembered_messages:
+        # * Checks if role and messages are not empty 
         if chat_head_response["role"] and chat_head_response["message"]:
             generate_chat_head(
                 role = chat_head_response["role"],
@@ -50,7 +71,14 @@ def generate_previous_chats(file_name: str, prompter_name: str, bot_name: str) -
 
 
 def typing_animation(prompt: str, duration: float = 0.05) -> None:
-    """ just typing animation similar to chatgpt response """
+    """ 
+    just typing animation similar to chatgpt response.
+
+    ```python
+    (prompt: str) -> User prompt.
+    (duration: float) -> You can change the typing speed.
+    ```
+    """
 
     typed: List = Text("", style="bold magenta")
 
@@ -58,10 +86,21 @@ def typing_animation(prompt: str, duration: float = 0.05) -> None:
         for char in prompt:
             typed.append(char)
             live.update(Panel.fit(typed, border_style="magenta"))
-            time.sleep(duration)  # How fast it will type
+            time.sleep(duration)  # * How fast it will type
 
 
-def generate_chat_head(role: Literal["prompter", "bot"], response: str, prompter_name: str = "Haimonmon", bot_name: str = "Chad", enable_typing_animation: bool = False) -> None:
+def generate_chat_head(role: Literal["prompter", "bot"], response: str, prompter_name: str = "", bot_name: str = "", enable_typing_animation: bool = False) -> None:
+    """
+    Display single chat head for the given role.
+    ```python
+    (role: str) -> To identify chat heads ownership.
+    (response: str) -> Message for the chat head, can be either chat response or user prompt.
+    (prompter_name: str) -> Prompter or user name.
+    (bot_name: str) -> Name of the bot.
+    (enable_typing_animation: bool) -> Want to have the chat head generation a typing animation first?
+    ```
+    """
+    # * Checks if role params have the given role, just making sure its just the "prompter" and the "bot" roles.
     if role not in ["prompter", "bot"]:
         print(f"[🐞] Invalid Role : {role}")
         return
@@ -72,8 +111,8 @@ def generate_chat_head(role: Literal["prompter", "bot"], response: str, prompter
     }
 
     chat_head_response: str = f"\n [ {chat_head_icons[role]} ] : {response} \n"
-    # ! chat_head_response_template: str = f"\n [ {role} ] : {response} \n"
 
+    # * Each roles need to have unique color chat heads.
     if role == "prompter":
         chat_head_text = Text(chat_head_response, style="bold orange1")
         chat_head_panel = Panel.fit(chat_head_text, border_style="orange1")
@@ -89,12 +128,21 @@ def generate_chat_head(role: Literal["prompter", "bot"], response: str, prompter
 
 
 def display_header(header_text: str, sub_header_text: str, title_header_text: str) -> None:
-    """ pang display lang ng header as introduction, can be either bot name, perfect with 5 letters maximum"""
+    """ 
+    pang display lang ng header as introduction, can be either bot name, perfect with 5 letters maximum 
+
+    ```python
+    (header_text: str) -> Large text to be shown up.
+    (sub_header_text: str) -> Mini text below of the header text.
+    (title_header: str) -> mini title along with the header border or panel.
+    ```
+    """
 
     figlet = Figlet(font='alligator')
     logo = figlet.renderText(header_text)
     line_separator = "_" * 75
     
+    # * Example of rich library own print() function.
     console.print(Panel.fit(f"[bold magenta] {logo} \n {line_separator} \n {sub_header_text} [/bold magenta]", border_style = "magenta", title = title_header_text, padding=1), justify = "center")
 
 
@@ -133,6 +181,8 @@ def display_chat_window(prompter_name: str, bot_name: str, selected_chat_session
 
             # * Make sure to add the latest chat with the greetings to avoid unlatest data.
             chat_session: List = dizzy.get_remembered_messages(selected_chat_session)
+            is_previous_chat_loaded: bool = True
+            
         elif len(chat_session) != 0 and not is_previous_chat_loaded:
             generate_previous_chats(
                 file_name = selected_chat_session, 
@@ -158,7 +208,9 @@ def display_chat_window(prompter_name: str, bot_name: str, selected_chat_session
 
 
 def say_goodbye(prompt: str) -> bool:
-    """ Make sure the user says a goodbye to its best friend """
+    """ 
+    Make sure the user says a goodbye to its best friend 
+    """
     for keyword in dizzy.tokenization(prompt):
         if keyword in dizzy.get_knowledge()["farewell"]["keyword"]:
             return True
@@ -166,7 +218,13 @@ def say_goodbye(prompt: str) -> bool:
     
     
 def sigma_bot(your_name: str = "You", bot_name = "Dizzy") -> None:
-    """ main """
+    """ 
+    The main of the bot application
+    ```python
+    (your_name: str) -> Pangalan molang.
+    (bot_name: str) -> Bot name basta hahaha.
+    ```
+    """
 
     # * Display a panel pane with the bot name at the start of the program.
     display_header(

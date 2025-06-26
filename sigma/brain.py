@@ -1,32 +1,40 @@
 import re
-import sys
-import time
 import random
-
 
 from typing import Dict, List
 
 from .memory import remember_message, get_remembered_messages, get_knowledge
 
 def learn(response: str) -> None:
-    """ Captures user prompts by simply saving it into json file memory"""
+    """ 
+    Captures user prompts by simply saving it into json file memory
+
+    (response: str) -> User prompt.
+    """
     pass
 
 
 def tokenization(prompt: str) -> List:
-    """ Seperating each word on the prompt """
+    """ Seperating each word of the prompt """
     return re.findall(r"\w+|[^\w\s]", prompt.lower())
 
 
 def ask(prompt: str, knowledge: Dict = get_knowledge(), file = "chat1.json", remember: bool = True) -> str:
     """ 
-    this is where the dizzy bot choose a response 
+    Ask the bot any question and it will answer thruthfully.. i guess..
+
+    ```python
+    (prompt: str) -> User prompt.
+    (knowledge: Dict) -> Contains keywords known by the bot.
+    (file: str) -> Contains the file name for saving user and bot responses.
+    (remember: bool) -> Enable the bot to save user and bot responses.
+    ```
     """
 
     # * stores memory.json data
     loaded_knowledge: Dict = knowledge
 
-    # * Saves user asked prompt on specific json file
+    # * Saves user prompt on specific json file
     if remember:
         is_save = remember_message(file, role="prompter", message=prompt)
 
@@ -44,15 +52,21 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(), file = "chat1.json", rem
                 # * Saves bot response on json file
                 response = random.choice(category_data["response"])
                 if remember:
-                    remember_message(file = file, role = "bot", message = response)
+                    remember_message(file_name = file, role = "bot", message = response)
                 return response
     
     # * Saves bot default response on json file
     default_response: str = random.choice(category_data["response"])
     if remember:
-        remember_message(file = file, role = "bot", message = default_response)
+        remember_message(file_name = file, role = "bot", message = default_response)
     return default_response
         
+
+def levenshtein(keyword1: str, keyword2: str) -> int:
+    """
+    A function that scales the misspelled words wrongness.
+    """
+    pass
 
 if __name__ == "__main__":
         ask("hello")
@@ -66,20 +80,5 @@ if __name__ == "__main__":
         # aBle to identify questions
 
 
-        """
-        since we have a category for each keywords and responses we can base the user prompt 
-        how much his sentence are based off on those category.
-
-        for example:
-        
-        "hello im cathy, and i love so much about flowers "
-
-        hello word are in the greetings category
-
-        love are in compliment category
-
-        flowers are in object category
-
-        """
-
+       
 

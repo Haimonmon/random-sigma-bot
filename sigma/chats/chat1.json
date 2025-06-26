@@ -1,15 +1,7 @@
 [
     {
         "role": "bot",
-        "message": "Yo! Wassup? \ud83d\ude0e"
-    },
-    {
-        "role": "prompter",
-        "message": "nvm bye lmfaoooo"
-    },
-    {
-        "role": "bot",
-        "message": "Time for me to dip \u2014 thank you for your attention and energy. It's been real, fr fr. No cap \ud83e\udef1\ud83d\udd25."
+        "message": "Yo yo yo! What's on your mind today?"
     },
     {
         "role": "prompter",
@@ -17,22 +9,14 @@
     },
     {
         "role": "bot",
-        "message": "Time for me to dip \u2014 thank you for your attention and energy. It's been real, fr fr. No cap \ud83e\udef1\ud83d\udd25."
+        "message": "This convo has been elite. Time to vanish like a rare NFT project. Much respect, peace and blessings \ud83d\udcc9\u2728."
     },
     {
         "role": "prompter",
-        "message": "goodbye mah nigga!!"
+        "message": "nvm goodbye lmafaooo"
     },
     {
         "role": "bot",
-        "message": "It's been an absolute pleasure. I'm off to touch grass and recalibrate my soul. Until we link again \ud83e\uddd8\ud83c\udf31."
-    },
-    {
-        "role": "prompter",
-        "message": "lol"
-    },
-    {
-        "role": "bot",
-        "message": "you're wildin' rn, idk what that means \ud83d\udc80"
+        "message": "Farewell, bestie. I'm professionally clocking out and emotionally spiraling, respectfully \ud83d\ude43."
     }
 ]

@@ -19,9 +19,9 @@
     },
     "farewell": {
         "keyword": [
-            "bye", "goodbye", "see ya", "seen you" ,"ya", "later", "catch you later", "later", 
-            "peace", "peace out", "ciao", "sayonara", "adios nigger", "smell ya later", "talk to you later", "gtg", 
-            "g2g", "i'm out", "i gotta go", "laters", "farewell", "fare", "well", "take care", "i'll be going", "im leaving", 
+            "bye", "goodbye", "see ya", "seen you" , "later", "catch you later", "later", 
+            "peace out", "ciao", "sayonara", "adios", "smell ya later", "talk to you later", "gtg", 
+            "g2g", "i'm out", "i gotta go", "laters", "farewell", "take care", "i'll be going", "im leaving", 
             "gotta dip", "bye for now", "sayonara madafakas!!", "exit"
         ],
         "response": [
