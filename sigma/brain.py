@@ -16,10 +16,10 @@ def learn(response: str) -> None:
 
 def tokenization(prompt: str) -> List:
     """ Seperating each word of the prompt """
-    return re.findall(r"\w+|[^\w\s]", prompt.lower())
+    return re.findall(r"[a-zA-Z0-9']+|[.,!?;]", prompt.lower())
 
 
-def ask(prompt: str, knowledge: Dict = get_knowledge(), file = "chat1.json", remember: bool = True) -> str:
+def ask(prompt: str, knowledge: Dict = get_knowledge("greets.json"), file = "chat1.json", remember: bool = True) -> str:
     """ 
     Ask the bot any question and it will answer thruthfully.. i guess..
 
@@ -66,6 +66,11 @@ def levenshtein(keyword1: str, keyword2: str) -> int:
     """
     A function that scales the misspelled words wrongness.
     """
+    pass
+
+
+# * ========================================================================= ask question
+def ask_question(prompt: str) -> None:
     pass
 
 if __name__ == "__main__":
