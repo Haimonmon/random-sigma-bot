@@ -1,38 +1,30 @@
 [
     {
         "role": "bot",
-        "message": "Yo! Wassup? \ud83d\ude0e"
+        "message": "Howdy partner \ud83e\udd20"
     },
     {
         "role": "prompter",
-        "message": "lmaooooo"
+        "message": "hello gello hello"
     },
     {
         "role": "bot",
-        "message": "uhh what now? \ud83e\udd28"
+        "message": "Yo yo yo! What's on your mind today?\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: gello"
     },
     {
         "role": "prompter",
-        "message": "hello"
+        "message": "gello"
     },
     {
         "role": "bot",
-        "message": "Heyyy! What's cookin'? \ud83d\udc4b"
+        "message": "huh? that ain't in my dictionary \ud83e\uddcd\u200d\u2642\ufe0f\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: gello"
     },
     {
         "role": "prompter",
-        "message": "nvm bye lmao"
+        "message": "goodbye then haha"
     },
     {
         "role": "bot",
-        "message": "Signing off like a true professional-slash-goblin hybrid. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
-    },
-    {
-        "role": "prompter",
-        "message": "nvm bye again lmao"
-    },
-    {
-        "role": "bot",
-        "message": "I regret to inform you that I must vanish. However, I leave with nothing but gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: haha"
     }
 ]

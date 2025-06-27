@@ -26,6 +26,11 @@ def get_knowledge(file_name: Literal["greets.json", "almanac.json", "interrogati
     return load_file(file_name = f"sigma/knowledge/{file_name}")
 
 
+def add_knowledge(file_name: Literal["learned.json"], info: str) -> None:
+    """ Save learned keywords for future use """
+    save_file(file_name = f"sigma/knowledge/{file_name}")
+
+
 def get_remembered_messages(file_name: str) -> List:
     """ Loads previous known chats """
     return load_file(file_name = f"{folder_directory}{file_name}")
