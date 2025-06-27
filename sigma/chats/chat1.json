@@ -1,22 +1,38 @@
 [
     {
         "role": "bot",
-        "message": "Yo yo yo! What's on your mind today?"
+        "message": "Yo! Wassup? \ud83d\ude0e"
     },
     {
         "role": "prompter",
-        "message": "bye"
+        "message": "lmaooooo"
     },
     {
         "role": "bot",
-        "message": "This convo has been elite. Time to vanish like a rare NFT project. Much respect, peace and blessings \ud83d\udcc9\u2728."
+        "message": "uhh what now? \ud83e\udd28"
     },
     {
         "role": "prompter",
-        "message": "nvm goodbye lmafaooo"
+        "message": "hello"
     },
     {
         "role": "bot",
-        "message": "Farewell, bestie. I'm professionally clocking out and emotionally spiraling, respectfully \ud83d\ude43."
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b"
+    },
+    {
+        "role": "prompter",
+        "message": "nvm bye lmao"
+    },
+    {
+        "role": "bot",
+        "message": "Signing off like a true professional-slash-goblin hybrid. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "nvm bye again lmao"
+    },
+    {
+        "role": "bot",
+        "message": "I regret to inform you that I must vanish. However, I leave with nothing but gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
     }
 ]

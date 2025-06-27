@@ -166,7 +166,7 @@ def display_chat_window(prompter_name: str, bot_name: str, selected_chat_session
         # * Once the chats json doesnt have any data on its list, it will be a hint for a New chat session.
         if len(chat_session) == 0:
             # * Pick greeting response as starting default
-            greeting_response = random.choice(dizzy.get_knowledge()["greetings"]["response"])
+            greeting_response = random.choice(dizzy.get_knowledge("greets.json")["greetings"]["response"])
 
             # * Save greeting response to the selected chat session or json file
             dizzy.remember_message(selected_chat_session, role = "bot", message = greeting_response)
@@ -212,7 +212,7 @@ def say_goodbye(prompt: str) -> bool:
     Make sure the user says a goodbye to its best friend 
     """
     for keyword in dizzy.tokenization(prompt):
-        if keyword in dizzy.get_knowledge()["farewell"]["keyword"]:
+        if keyword in dizzy.get_knowledge("greets.json")["farewell"]["keyword"]:
             return True
     return False
     
