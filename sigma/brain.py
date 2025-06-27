@@ -136,11 +136,34 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     return final_response
 
 
-def levenshtein(keyword1: str, keyword2: str) -> int:
+def levenshtein(str1: str, str2: str) -> int:
     """
     A function that scales the misspelled words wrongness.
     """
-    pass
+    len1 = len(str1)
+    len2 = len(str2)
+
+    dp = [ [0] * (len2 + 1) for x in range(len1 + 1)]
+
+    for i in range(len1 + 1):
+        for j in range(len2 + 1):
+
+            if i == 0:
+                dp[i][j] = j
+
+            elif j == 0:
+                dp[i][j] = i
+
+            elif str1[i-1] == str2[j-1]:
+                dp[i][j] = dp[i - 1][j - 1]
+            else:
+                dp[i][j] = 1 + min(dp[i][j-1],dp[i-1][j],dp[i-1][j-1])
+
+    return dp[len1][len2]
+
+def suggest_corrections(word: str, dictionary_words: set, max_distance: int = 2) -> List[str]:
+    """Suggest close dictionary words based on Levenshtein distance."""
+    return [w for w in dictionary_words if levenshtein(word, w) <= max_distance]
 
 
 # * ========================================================================= ask question

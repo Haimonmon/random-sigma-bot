@@ -26,5 +26,173 @@
     {
         "role": "bot",
         "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: haha"
+    },
+    {
+        "role": "prompter",
+        "message": "come on then"
+    },
+    {
+        "role": "bot",
+        "message": "wait wha- \ud83d\ude33 say it slower maybe?\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: come"
+    },
+    {
+        "role": "prompter",
+        "message": "cum"
+    },
+    {
+        "role": "bot",
+        "message": "not me sitting here confused af \ud83d\ude2d\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: cum"
+    },
+    {
+        "role": "prompter",
+        "message": "what are you doing?"
+    },
+    {
+        "role": "bot",
+        "message": "huh? that ain't in my dictionary \ud83e\uddcd\u200d\u2642\ufe0f\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \u2753 Question detected | \ud83d\uded1 Possible typos: doing"
+    },
+    {
+        "role": "prompter",
+        "message": "can you call, i lovr flowers"
+    },
+    {
+        "role": "bot",
+        "message": "Ah, flowers - You really know what\u2019s good \ud83d\udc4c\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: can, call, lovr"
+    },
+    {
+        "role": "prompter",
+        "message": "hi im nigga, and i like chickens"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today? You're spreading good energy, keep it up \ud83c\udf08\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive | \ud83d\uded1 Possible typos: nigga, chickens"
+    },
+    {
+        "role": "prompter",
+        "message": "im nigga, and i like chickens"
+    },
+    {
+        "role": "bot",
+        "message": "That's such a sweet vibe, I feel that \ud83e\udd70\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive | \ud83d\uded1 Possible typos: nigga, chickens"
+    },
+    {
+        "role": "prompter",
+        "message": "i like chickens"
+    },
+    {
+        "role": "bot",
+        "message": "That's such a sweet vibe, I feel that \ud83e\udd70\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive | \ud83d\uded1 Possible typos: chickens"
+    },
+    {
+        "role": "prompter",
+        "message": "love chickens"
+    },
+    {
+        "role": "bot",
+        "message": "That's such a sweet vibe, I feel that \ud83e\udd70\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive | \ud83d\uded1 Possible typos: chickens"
+    },
+    {
+        "role": "prompter",
+        "message": "i love flower"
+    },
+    {
+        "role": "bot",
+        "message": "You\u2019ve got good taste! \ud83d\udd25\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive | \ud83d\uded1 Possible typos: flower"
+    },
+    {
+        "role": "prompter",
+        "message": "i like flowers"
+    },
+    {
+        "role": "bot",
+        "message": "It's lovely you're into flowers - Let\u2019s talk more about that. I\u2019m intrigued \ud83e\udde0 That\u2019s a wholesome thing to say \ud83d\udc96\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive"
+    },
+    {
+        "role": "prompter",
+        "message": ""
+    },
+    {
+        "role": "bot",
+        "message": "not me sitting here confused af \ud83d\ude2d\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral"
+    },
+    {
+        "role": "prompter",
+        "message": "i love chickens"
+    },
+    {
+        "role": "bot",
+        "message": "You\u2019ve got good taste! \ud83d\udd25\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive | \ud83d\uded1 Possible typos: chickens"
+    },
+    {
+        "role": "prompter",
+        "message": "no cap"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 Bet. Let\u2019s ride with that energy \ud83d\udef9\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: no"
+    },
+    {
+        "role": "prompter",
+        "message": "skibidi"
+    },
+    {
+        "role": "bot",
+        "message": "wait wha- \ud83d\ude33 say it slower maybe?\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: skibidi"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral"
+    },
+    {
+        "role": "prompter",
+        "message": "i love memes"
+    },
+    {
+        "role": "bot",
+        "message": "It's lovely you're into memes - That\u2019s something to appreciate more. Aww, you're vibing! Love that for you \u2764\ufe0f\n\ud83d\ude42 Emotion: \ud83d\ude42 Positive"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral"
+    },
+    {
+        "role": "prompter",
+        "message": "i luv yu"
+    },
+    {
+        "role": "bot",
+        "message": "uhh what now? \ud83e\udd28\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: luv, yu"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Time to dip \u2014 it's been real, no cap \ud83e\udef1\ud83d\udd25.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral"
+    },
+    {
+        "role": "prompter",
+        "message": "i luv yu"
+    },
+    {
+        "role": "bot",
+        "message": "ngl that one lost me... try again? \ud83d\udc40\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos & suggestions: luv \u2192 lit, up, fun, tv, sup, sus, but, us, love | yu \u2192 in, hi, is, an, up, yo, fun, as, my, at, tv, be, of, or, sup, i, you, fr, sus, im, but, so, on, bye, a, to, us, it, am, do, your, me, we, if"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral"
     }
 ]
