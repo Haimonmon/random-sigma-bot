@@ -238,5 +238,11 @@
             "You’d donate a kidney for them, huh?",
             "It’s okay to simp. Just don’t lose yourself."
         ]
+    },
+    "no answer": {
+        "keywords": [],
+        "answers": [
+            "Nvm I can't find any info about it, lmfao 💀👌"
+        ]
     }
 }

@@ -80,6 +80,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
             return
 
     # Match responses by category and randomize the response.
+    
     for category, data in knowledge.items():
         if any(keyword in tokens for keyword in data.get("keyword", [])):
             matched_categories.append(category)
@@ -93,6 +94,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     # This chunk of code will create or construct a smart response
     response_parts = []
 
+    # print(category_responses)
     if "greetings" in category_responses:
         response_parts.append(category_responses["greetings"])
 
@@ -172,13 +174,14 @@ def identify_entity(prompt: str) -> None:
             # print(f"[🔥] '{key}' scored {score} points")
 
 
-    return best_match or "Nvm I can't find any info about it, lmfao 💀👌"
+    return best_match or "no answer"
 
 
 if __name__ == "__main__":
         # print(ask_question("Can you breakdown for me, what is rizz?"))
-        print(identify_entity("ok last one, how abot simp?"))
+        # print(identify_entity("whats up"))
         pass
+       
         
        
         # TODO: required bot iNteractions:

@@ -106,5 +106,213 @@
     {
         "role": "bot",
         "message": "You're spreading good energy, keep it up \ud83c\udf08 Farewell, bestie. Spiraling respectfully \ud83d\ude43."
+    },
+    {
+        "role": "prompter",
+        "message": "whats a mom?"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "\n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "\n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Howdy partner \ud83e\udd20 \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "\n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "wazzupppp wazuupp, can you tell me about rizz?"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 Dead \ud83d\ude02 that took me out \n You're asking about something interesting \u2014 let's dive in! \n Certified Rizzler \ud83d\ude0e"
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello hello!!!, can you tell me about database?"
+    },
+    {
+        "role": "bot",
+        "message": "Hello hello! Ready to chat? \ud83d\udcac \n That seems like something I can help with. Here's what I know: \n Think of it like a digital filing cabinet."
+    },
+    {
+        "role": "prompter",
+        "message": "Skibidi?"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 No cap, that\u2019s facts \ud83e\udde2\ud83d\udd25 \n Great question! Give me a moment to gather what I know... \n Sigma behavior detected \ud83d\udebd\ud83d\ude24"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "\n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "\n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "hello , can you tell me whats a cat"
+    },
+    {
+        "role": "bot",
+        "message": "Howdy partner \ud83e\udd20 \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c Ah, cat - Such a peaceful topic, I respect that \ud83c\udf05"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "ok i love cats and goodbye"
+    },
+    {
+        "role": "bot",
+        "message": "You\u2019ve got good taste! \ud83d\udd25 Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
+    },
+    {
+        "role": "prompter",
+        "message": "nvm i just to tell i love cats, see ya"
+    },
+    {
+        "role": "bot",
+        "message": "\n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c You\u2019ve got good taste! \ud83d\udd25"
+    },
+    {
+        "role": "prompter",
+        "message": "nvm i just to tell i love cats, goodbye"
+    },
+    {
+        "role": "bot",
+        "message": "\n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c That\u2019s a wholesome thing to say \ud83d\udc96 Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
     }
 ]

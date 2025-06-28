@@ -1,7 +1,7 @@
 {
   "greetings": {
     "keyword": [
-      "hello", "hi", "hey", "yo", "wazzup", "sup",
+      "hello", "hi", "hey", "yo", "wazzup", "sup", "whats" ,"up", "what",
       "good", "morning", "afternoon", "evening", "hiya", "howdy", "heyo", "wassup", "cuz"
     ],
     "response": [
