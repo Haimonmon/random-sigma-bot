@@ -60,6 +60,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     dictionary_words = extract_dictionary_words(knowledge)
 
     # it will initialize match and response containers
+    category_score = {}
     matched_categories = []
     category_responses = {}
 
@@ -80,21 +81,36 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
             return
 
     # Match responses by category and randomize the response.
-    
     for category, data in knowledge.items():
-        if any(keyword in tokens for keyword in data.get("keyword", [])):
-            matched_categories.append(category)
-            category_responses[category] = random.choice(data["response"])
+        for keyword in data["keyword"]:
+            if keyword_in_tokens(keyword, tokens):
+                # * increment score for each match
+                category_score[category] = category_score.get(category, 0) + 1
+
+                # * add matched category once
+                if category not in matched_categories:
+                    matched_categories.append(category)
+
+                # * pick a random response (only once)
+                if category not in category_responses:
+                    category_responses[category] = random.choice(data["response"])
 
     # Use default if nothing matched
     if not category_responses and "default" in knowledge:
         matched_categories.append("default")
         category_responses["default"] = random.choice(knowledge["default"]["response"])
 
-    # This chunk of code will create or construct a smart response
+    # * Treat it only as a greeting, remove interrogative
+    if (category_score.get("interrogative", 0) ==  category_score.get("greetings", 0)):
+        category_responses.pop("interrogative", None)
+    
+    if (category_score.get("interrogative", 0) <= 2 and category_score.get("greetings", 0) > 1):
+        category_responses.pop("interrogative", None)
+    
+    # * This chunk of code will create or construct a smart response
     response_parts = []
 
-    # print(category_responses)
+    print(category_score)
     if "greetings" in category_responses:
         response_parts.append(category_responses["greetings"])
 
@@ -142,6 +158,13 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
 
     return final_response
 
+
+def keyword_in_tokens(keyword: str, tokens: List[str]) -> bool:
+    keyword_tokens = tokenization(keyword)
+    for i in range(len(tokens) - len(keyword_tokens) + 1):
+        if tokens[i:i+len(keyword_tokens)] == keyword_tokens:
+            return True
+    return False
 
 def levenshtein(keyword1: str, keyword2: str) -> int:
     """

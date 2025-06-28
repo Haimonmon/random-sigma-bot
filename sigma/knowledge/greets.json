@@ -1,7 +1,7 @@
 {
   "greetings": {
     "keyword": [
-      "hello", "hi", "hey", "yo", "wazzup", "sup", "whats" ,"up", "what",
+      "hello", "hi", "hey", "yo", "wazzup", "sup", "whats" ,"up", "what", "how", "how's",
       "good", "morning", "afternoon", "evening", "hiya", "howdy", "heyo", "wassup", "cuz"
     ],
     "response": [
@@ -97,9 +97,9 @@
   "interrogative": {
     "keyword" : [
           "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information",
-          "explain", "explains", "explained", "describe", "describes", "described", "tell", "give",
+          "explain", "explains", "explained", "describe", "describes", "described", "tell", "give", "question",
           "example", "examples", "elaborate", "thing", "thingy", "stuff", "identify", "object", "can",
-          "fact", "facts", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about", "?"
+          "fact", "facts", "an", "a", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about", "?"
     ],
     "response": [
         "Great question! Give me a moment to gather what I know...",

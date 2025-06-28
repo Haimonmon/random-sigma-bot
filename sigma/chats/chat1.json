@@ -314,5 +314,573 @@
     {
         "role": "bot",
         "message": "\n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c That\u2019s a wholesome thing to say \ud83d\udc96 Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
+    },
+    {
+        "role": "prompter",
+        "message": "sup?"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25 \n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "sup"
+    },
+    {
+        "role": "bot",
+        "message": "Heya! What brings you here today? \ud83d\ude04"
+    },
+    {
+        "role": "prompter",
+        "message": "ok hello and goodbyee"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e"
+    },
+    {
+        "role": "prompter",
+        "message": "ok hello and goodbye"
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
+    },
+    {
+        "role": "prompter",
+        "message": "yo?"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today? \n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello"
+    },
+    {
+        "role": "bot",
+        "message": "Howdy partner \ud83e\udd20"
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello, can you tell me about api?"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25 \n Great question! Give me a moment to gather what I know... \n It stands for Application Programming Interface."
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today?"
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello, can you tell me about api?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e \n You're asking about something interesting \u2014 let's dive in! \n APIs are how software sends and receives information."
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello, can you tell me about api?"
+    },
+    {
+        "role": "bot",
+        "message": "Heya! What brings you here today? \ud83d\ude04 \n Great question! Give me a moment to gather what I know... \n Think of APIs as digital waiters that deliver your data orders."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "whats a api?"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f \n Great question! Give me a moment to gather what I know... \n They help connect frontend to backend systems."
+    },
+    {
+        "role": "prompter",
+        "message": "what is api"
+    },
+    {
+        "role": "bot",
+        "message": "Hello hello! Ready to chat? \ud83d\udcac \n Great question! Give me a moment to gather what I know... \n Think of APIs as digital waiters that deliver your data orders."
+    },
+    {
+        "role": "prompter",
+        "message": "whats an api?"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e \n Great question! Give me a moment to gather what I know... \n It stands for Application Programming Interface."
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
+    },
+    {
+        "role": "prompter",
+        "message": "whats a api"
+    },
+    {
+        "role": "bot",
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b \n You're asking about something interesting \u2014 let's dive in! \n APIs are how software sends and receives information."
+    },
+    {
+        "role": "prompter",
+        "message": "yo?"
+    },
+    {
+        "role": "bot",
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "yo yo whats up!???"
+    },
+    {
+        "role": "bot",
+        "message": "Heya! What brings you here today? \ud83d\ude04 \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "yo whats up?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "yo yo yo whats up??, can you tell me about rizz?"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25 You're speaking fluent Gen Z \ud83d\udd25 That\u2019s such a vibe fr fr \ud83c\udf0a \n Great question! Give me a moment to gather what I know... \n You\u2019ve got game like a final boss."
+    },
+    {
+        "role": "prompter",
+        "message": "yo yo whats up?, can you tell me about skibi?"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "hello, whats a api?"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n That seems like something I can help with. Here's what I know: \n It stands for Application Programming Interface."
+    },
+    {
+        "role": "prompter",
+        "message": "\"how are you doing?\""
+    },
+    {
+        "role": "bot",
+        "message": "\n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "\"how are you doing?\""
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "long time no see, how are you?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today? \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "i love cats"
+    },
+    {
+        "role": "bot",
+        "message": "That's such a sweet vibe, I feel that \ud83e\udd70"
+    },
+    {
+        "role": "prompter",
+        "message": "hello i love cats but whats a database?"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f \n Let me try to explain that... \n SQL is the language used to talk to many databases. That\u2019s a wholesome thing to say \ud83d\udc96"
+    },
+    {
+        "role": "prompter",
+        "message": "i hate cats"
+    },
+    {
+        "role": "bot",
+        "message": "bruh... say that again but like, human pls \ud83d\ude05"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
+    },
+    {
+        "role": "prompter",
+        "message": "hello hello "
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today?"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up?"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "how are you"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+    },
+    {
+        "role": "prompter",
+        "message": "what's up"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hello hello! Ready to chat? \ud83d\udcac \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "what's up"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hello hello! Ready to chat? \ud83d\udcac \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+    },
+    {
+        "role": "prompter",
+        "message": "how are you"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f"
+    },
+    {
+        "role": "prompter",
+        "message": "how's it going"
+    },
+    {
+        "role": "bot",
+        "message": "not me sitting here confused af \ud83d\ude2d"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "hows it going"
+    },
+    {
+        "role": "bot",
+        "message": "uhh what now? \ud83e\udd28"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25 \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hello hello! Ready to chat? \ud83d\udcac \n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e"
+    },
+    {
+        "role": "prompter",
+        "message": "sup?"
+    },
+    {
+        "role": "bot",
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b"
+    },
+    {
+        "role": "prompter",
+        "message": "wassup"
+    },
+    {
+        "role": "bot",
+        "message": "Hello hello! Ready to chat? \ud83d\udcac"
+    },
+    {
+        "role": "prompter",
+        "message": "yo, what's good?"
+    },
+    {
+        "role": "bot",
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b"
+    },
+    {
+        "role": "prompter",
+        "message": "whats good?"
+    },
+    {
+        "role": "bot",
+        "message": "Howdy partner \ud83e\udd20"
+    },
+    {
+        "role": "prompter",
+        "message": "Hi, how's your day"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
+    },
+    {
+        "role": "prompter",
+        "message": "Hey wassup, you good?"
+    },
+    {
+        "role": "bot",
+        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e"
+    },
+    {
+        "role": "prompter",
+        "message": "what's up cuz?"
+    },
+    {
+        "role": "bot",
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b"
+    },
+    {
+        "role": "prompter",
+        "message": "Hello, how are you?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today?"
+    },
+    {
+        "role": "prompter",
+        "message": "Sup, what you up to?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e"
+    },
+    {
+        "role": "prompter",
+        "message": "Sup, what you up to? goodbye then"
+    },
+    {
+        "role": "bot",
+        "message": "Good day to you! \ud83c\udf1f Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
+    },
+    {
+        "role": "prompter",
+        "message": "Sup, what you up to?, i have a question, whats the meaning of api in terms of programming?"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today? \n Let me try to explain that... \n An API is a set of tools that lets programs talk to each other."
+    },
+    {
+        "role": "prompter",
+        "message": "ok thanks goodbye"
+    },
+    {
+        "role": "bot",
+        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
     }
 ]
