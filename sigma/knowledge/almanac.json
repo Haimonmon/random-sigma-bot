@@ -6,7 +6,17 @@
             "It stands for Application Programming Interface.",
             "Think of APIs as digital waiters that deliver your data orders.",
             "APIs are how software sends and receives information.",
-            "They help connect frontend to backend systems."
+            "They help connect frontend to backend systems.",
+            "An API is basically a digital plug — it lets apps talk to each other without drama.",
+            "APIs = Application Programming Interface. Fancy term, simple idea: data in, data out.",
+            "It’s like asking a waiter (the API) to get food (data) from the kitchen (server).",
+            "APIs are like the glue that holds frontend and backend together — total BFFs 💅.",
+            "If you're coding without APIs, you're just doing raw survival mode 😭.",
+            "Wanna fetch data? Post a request? Boom — that's API magic for ya.",
+            "Every time you hit 'like' on a post, an API call says ‘noted, bestie’.",
+            "APIs are like vibes: invisible but super important 🔗.",
+            "APIs help your app not be clueless. They bring the intel from the backend 🧠.",
+            "They're the unsung heroes of the web — no cap 🫡."
         ]
     },
     "chatbot": {
@@ -16,7 +26,17 @@
             "It's a virtual assistant that answers your questions.",
             "You're literally chatting with one right now 😄",
             "Some are rule-based, others use AI — like ChatGPT, Gemini, Claude!",
-            "They're often used in websites and apps for customer support."
+            "They're often used in websites and apps for customer support.",
+            "A chatbot is basically a digital homie that never sleeps and always has a comeback 🤖.",
+            "It’s like texting a really smart (or sometimes confused) robot.",
+            "You're literally talking to one — meta, huh? 😎",
+            "Chatbots are like customer service reps with zero need for coffee breaks ☕.",
+            "They can be dumb as bricks or smart like ChatGPT — depends on the sauce behind them.",
+            "Some bots are rule-based (like if-else galore), others have big brain AI vibes 🧠.",
+            "They live in websites, apps, or even in your phone — lowkey everywhere.",
+            "Think of chatbots as your 24/7 therapist, trivia buddy, or chaos enabler.",
+            "If you’ve ever typed 'help' and got a reply in 0.2 sec — yep, that’s a bot.",
+            "Not all heroes wear capes — some just wait for you to say 'Hi' ✨."
         ]
     },
    "variable": {
@@ -26,7 +46,15 @@
             "It's like a labeled box that holds a value.",
             "Variables are essential for storing and updating info in programs.",
             "Think of it as a nickname for your data.",
-            "In Python, you just write `name = 'haimonmon'` — boom, variable!"
+            "In Python, you just write `name = 'haimonmon'` — boom, variable!",
+            "A variable is a symbolic name associated with a value and whose associated value may be changed.",
+            "It acts as a reference to a memory location that holds data used in computations.",
+            "Variables are used to store inputs, intermediate values, and outputs in a program.",
+            "They help improve code readability and flexibility by allowing data to be reused.",
+            "Most programming languages require variables to follow naming rules and may enforce type constraints.",
+            "Proper use of variables enables efficient problem-solving and algorithm implementation.",
+            "Declaring and initializing variables is one of the first steps in writing any program.",
+            "Variables can hold different types of data, such as numbers, strings, or more complex structures."
         ]
     },
     "loop": {
@@ -36,7 +64,15 @@
             "Common types include for-loops and while-loops.",
             "They're used to automate repetitive tasks.",
             "Think of it as: 'Do this 10 times!'",
-            "It helps reduce redundancy in code — big time saver!"
+            "It helps reduce redundancy in code — big time saver!",
+            "Loops are fundamental control structures that execute a block of code multiple times.",
+            "They allow programs to handle repetitive tasks efficiently without code duplication.",
+            "A `for` loop iterates over a sequence, while a `while` loop continues based on a condition.",
+            "Loops enhance program flexibility by enabling dynamic flow based on input or logic.",
+            "Nested loops can be used for multidimensional data or complex iteration patterns.",
+            "Proper loop control (using break, continue) is essential for performance and avoiding infinite loops.",
+            "In most languages, loops are tightly integrated with collections like arrays or lists.",
+            "Efficient loop design improves readability and computational efficiency of your code."
         ]
     },
     "database": {
@@ -46,7 +82,15 @@
             "Think of it like a digital filing cabinet.",
             "SQL is the language used to talk to many databases.",
             "There are relational and non-relational types.",
-            "Databases are used in nearly every modern app."
+            "Databases are used in nearly every modern app.",
+            "A database is a structured collection of data that can be queried, updated, and managed efficiently.",
+            "Relational databases use tables and SQL, while NoSQL databases use flexible formats like JSON or documents.",
+            "PostgreSQL and MySQL are popular open-source relational database systems.",
+            "Databases support CRUD operations: Create, Read, Update, and Delete.",
+            "Efficient indexing and normalization are key to maintaining high-performance databases.",
+            "Transactions in databases ensure data integrity through ACID principles: Atomicity, Consistency, Isolation, Durability.",
+            "Backups and replication strategies are vital for ensuring database reliability and disaster recovery.",
+            "In modern web development, databases often interact with server-side APIs to deliver dynamic content."
         ]
     },
     "function": {
@@ -56,7 +100,15 @@
             "It's how you organize code into chunks.",
             "You call a function when you want it to run.",
             "In Python, you'd write one using `def`.",
-            "Functions help keep your code clean and readable."
+            "Functions help keep your code clean and readable.",
+            "Functions are like mini-robots in your code — give them a job and they just do it. 🤖",
+            "Think of a function as your code's personal assistant. Efficient. Loyal. Reusable. 💅",
+            "Writing `def my_func():` is like saying 'yo, I’m making a shortcut for this task'. 🛠️",
+            "It’s like a TikTok draft — reusable content that just needs to be called. 📱",
+            "Functions keep your code from turning into spaghetti 🍝 — structure is key, bestie.",
+            "They're like playlists for your logic — all the right lines in one vibe. 🎧",
+            "Instead of repeating yourself like a broken record, just call a function. 📞",
+            "Lowkey the GOAT for writing less, doing more 🔁"
         ]
     },
     "frontend": {
@@ -66,7 +118,15 @@
             "It's built with HTML, CSS, and JavaScript.",
             "If you can click it, it's probably frontend.",
             "It talks to the backend to display data.",
-            "Think of it as the 'face' of the app."
+            "Think of it as the 'face' of the app.",
+            "Frontend is the ✨ glow-up ✨ your app shows the world.",
+            "If you see it, click it, scroll it — that’s frontend, bestie. 👩‍💻",
+            "Built with HTML, CSS, and JavaScript — the holy trinity of good looks. 🙏",
+            "It’s like the outfit and makeup of a website — all about that visual slay. 💅",
+            "Frontend makes apps look cute, backend makes them smart. 😌",
+            "It vibes with users directly, no backstage pass needed. 🎭",
+            "Basically the user-facing part — it's all the stuff that makes you say 'wow'. 🤩",
+            "Frontend devs = interior designers of the internet. 🛋️"
         ]
     },
     "backend": {
@@ -76,7 +136,15 @@
             "It processes data, handles logic, and talks to the database.",
             "You don’t see it, but it's doing all the heavy lifting.",
             "APIs and databases live here.",
-            "It sends info to the frontend so users can interact with it."
+            "It sends info to the frontend so users can interact with it.",
+            "The backend is like the kitchen in a restaurant — it makes the magic happen, but you never see it.",
+            "It's where the data lives, the logic happens, and the chaos is organized.",
+            "Frontend is the pretty face, but backend is the brain doing the thinking.",
+            "Without the backend, your app is just a pretty screen that does absolutely nothing.",
+            "APIs, databases, logic — all the serious behind-the-scenes stuff lives here.",
+            "It's where your app decides what’s legal, what’s not, and what’s lunch.",
+            "Backend handles the mess so the frontend can look cool.",
+            "It’s the unsung hero that never gets a thank-you page."
         ]
     },
     "algorithm": {
@@ -86,7 +154,15 @@
             "It's like a recipe, but for your code.",
             "Used in sorting, searching, and AI too!",
             "They help you write logic that machines can follow.",
-            "Efficiency matters — good algorithms save time and power!"
+            "Efficiency matters — good algorithms save time and power!",
+            "An algorithm is basically a to-do list for your computer — but way pickier.",
+            "It's like a cooking recipe, but instead of cake, you get sorted data.",
+            "Behind every smart app is a tired little algorithm doing all the thinking.",
+            "If your code were a plan, the algorithm is the GPS — rerouting, rerouting...",
+            "Think of it as a super strict set of instructions your code *has* to follow.",
+            "Algorithms don't sleep, but they definitely crash if you confuse them.",
+            "They're the reason your feed knows what you'll like before you do.",
+            "Want your program to stop being dumb? Give it a good algorithm."
         ]
     },
     "slay": {
@@ -96,7 +172,12 @@
             "You just ate and left no crumbs 💅",
             "That's what we call a slay moment.",
             "On God, you understood the assignment 💯",
-            "She slayed harder than my processor!"
+            "She slayed harder than my processor!",
+            "King behavior detected 👑",
+            "Certified slay queen/king/royalty 🫅",
+            "You didn't just slay, you *decimated* 💀✨",
+            "This is not a drill. The slay is real 🔔🚨",
+            "Someone call IT — too much slay broke the system 💻💥"
         ]
     },
     "goat": {
@@ -106,7 +187,13 @@
             "Greatest of all time? Say less 😤",
             "You're built different frfr.",
             "Goated with the source code 💻",
-            "Not just a goat — a myth, a legend."
+            "Not just a goat — a myth, a legend.",
+            "You're so goated, even Python would import you.",
+            "Legend status unlocked. 🏆",
+            "If being iconic were a crime, you'd be serving 25 to life.",
+            "You're not just a GOAT. You're the whole barn.",
+            "I'd write a fanfic about your greatness.",
+            "Look at the cleanse, look at the moves - Faker what was that?"
         ]
     },
     "no cap": {
@@ -116,27 +203,47 @@
             "Facts, no printer 🖨️",
             "Deadass? For real for real? I believe you.",
             "All truth, no filters.",
-            "You’re spitting facts right now."
+            "You're spitting facts right now.",
+            "All facts, no fiction 📚",
+            "Realer than a heart monitor 💓",
+            "Cap-free zone detected.",
+            "Certified truth-teller. You'd pass a polygraph no sweat.",
+            "Spitting facts like it's your job."
         ]
     },
     "vibe": {
         "keywords": ["gen z", "vibe", "vibes", "good vibes", "bad vibes", "vibing"],
         "answers": [
             "Vibes = immaculate ✨",
-            "You’re radiating main character energy.",
+            "You're radiating main character energy.",
             "This convo? 10/10 chill.",
-            "Catch me vibin’ with this syntax.",
-            "Mood: absolute serotonin boost."
+            "Catch me vibin' with this syntax.",
+            "Mood: absolute serotonin boost.",
+            "Whole vibe. Not even half.",
+            "You bring the soundtrack to this convo 🎶",
+            "This chat got that lo-fi chill energy.",
+            "That's a vibe. I don't make the rules.",
+            "ISO: vibe partner. Found: YOU 💫"
         ]
     },
     "rizz": {
         "keywords": ["gen z", "rizz", "charisma", "flirting", "pull", "smooth"],
         "answers": [
             "Certified Rizzler 😎",
-            "You’ve got game like a final boss.",
+            "You've got game like a final boss.",
             "That was some elite rizz.",
             "Your charm? 10/10, would auto-reply.",
-            "That smooth talk belongs in a museum."
+            "That smooth talk belongs in a museum.",
+            "You're pulling hearts like it's a side quest 🎯",
+            "Smooth talker? Nah, smooth *operator* 🕶️",
+            "That line had more charm than a Pokémon gym badge.",
+            "Rizz levels unmatched — teach me, sensei 🙇",
+            "Your DMs must be under siege rn 📥🔥",
+            "Certified NPC flirter with max stats 🧙‍♂️",
+            "Your words got more drip than your fit.",
+            "That pickup line just paid rent — it SLAPS 💸",
+            "You flirt like your code compiles on the first run.",
+            "You're not just rizzing — you're leading a charisma cult."
         ]
     },
     "ate": {
@@ -146,7 +253,12 @@
             "You devoured that task, chef 👨‍🍳",
             "Not even the garbage collector could clean that up — you already did.",
             "You cooked 🔥",
-            "Serving full-course excellence."
+            "Serving full-course excellence.",
+            "Left no leftovers. Clean plate energy 🍽️",
+            "5-star meal, chef's kiss included 👨‍🍳💋",
+            "You devoured that like RAM on a memory leak.",
+            "Nom nom nom — excellence.",
+            "Even Gordon Ramsay's impressed. That's saying something."
         ]
     },
     "sus": {
@@ -156,7 +268,12 @@
             "Impostor vibes detected 🕵️",
             "Acting sussy baka rn.",
             "You vented didn’t you?",
-            "Stay sus-free, my friend."
+            "Stay sus-free, my friend.",
+            "Red flag flying high 🚩",
+            "You got that ‘impostor in electrical’ energy.",
+            "That’s sus, but I’ll allow it… for now.",
+            "Emergency meeting vibes 🛑",
+            "Among Us called. They want their vibe back."
         ]
     },
     "mid": {
@@ -176,7 +293,13 @@
             "Say less — I got you.",
             "We’re locked in 🗝️",
             "Let’s do this.",
-            "You already know it!"
+            "You already know it!",
+            "Say less. I’m built for this.",
+            "Bet bet bet. It’s going down.",
+            "Locked in like your FYP scroll loop 🔒",
+            "EZ clap incoming.",
+            "Challenge accepted. On God.",
+            "Aight Bet!"
         ]
     },
     "dead": {
@@ -206,7 +329,12 @@
             "Call that a certified double cheek moment.",
             "That’s a whole bakery back there!",
             "I wasn’t ready for that level of thicc.",
-            "Even my RAM couldn’t handle that view."
+            "Even my RAM couldn’t handle that view.",
+            "Back that data up 💾",
+            "Certified donk detected 🍑",
+            "Even my GPU had to zoom in.",
+            "That's not cake — that's a whole wedding buffet.",
+            "Alert: too thicc for the bandwidth."
         ]
     },
     "cringe": {
@@ -216,7 +344,12 @@
             "I got secondhand lag from that one.",
             "Delete that from your internal memory... quick.",
             "Certified cringe moment. We’ve all been there.",
-            "Might wanna uninstall and reboot your social skills 😬"
+            "Might wanna uninstall and reboot your social skills 😬",
+            "Cringe compilation incoming 📹",
+            "That made my BIOS cry.",
+            "Hard to watch. Can’t look away.",
+            "Even Clippy's embarrassed for you.",
+            "Powering off out of secondhand shame."
         ]
     },
     "bussin": {
@@ -236,7 +369,12 @@
             "You're down bad, huh?",
             "It’s giving hopeless romantic 😅",
             "You’d donate a kidney for them, huh?",
-            "It’s okay to simp. Just don’t lose yourself."
+            "It’s okay to simp. Just don’t lose yourself.",
+            "Down astronomically 🚀",
+            "You’re in the simposphere, orbiting reality.",
+            "That heart got no firewall ❤️",
+            "Your crush got admin rights over your soul.",
+            "Your feelings got more RAM than my server."
         ]
     },
     "no answer": {
