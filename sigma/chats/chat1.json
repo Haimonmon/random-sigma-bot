@@ -314,5 +314,53 @@
     {
         "role": "bot",
         "message": "\n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c That\u2019s a wholesome thing to say \ud83d\udc96 Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
+    },
+    {
+        "role": "prompter",
+        "message": "whats up"
+    },
+    {
+        "role": "bot",
+        "message": "Yo! Wassup? \ud83d\ude0e \n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+    },
+    {
+        "role": "prompter",
+        "message": "wassup"
+    },
+    {
+        "role": "bot",
+        "message": "Yo yo yo! What's on your mind today?"
+    },
+    {
+        "role": "prompter",
+        "message": "morning bro"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25"
+    },
+    {
+        "role": "prompter",
+        "message": "seeya"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
+    },
+    {
+        "role": "prompter",
+        "message": "can you tell what's is api?"
+    },
+    {
+        "role": "bot",
+        "message": "\n You're asking about something interesting \u2014 let's dive in! \n They help connect frontend to backend systems."
+    },
+    {
+        "role": "prompter",
+        "message": "hi there, can you tell me what is api?"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n That seems like something I can help with. Here's what I know: \n Think of APIs as digital waiters that deliver your data orders."
     }
 ]
