@@ -44,7 +44,7 @@ def learn(response: str) -> None:
         add_knowledge(file_name = "learned.json", info = entry)
 
 
-def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"), file="chat1.json", remember: bool = True) -> str:
+def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"), file="chat1.json", remember: bool = True, debug_mode: bool = False) -> str:
     """
     Ask the bot any question and it will answer thruthfully.. i guess..
 
@@ -57,7 +57,6 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     """
     # Tokenize the input prompt into words/symbols
     tokens = tokenization(prompt)
-    print(tokens)
     dictionary_words = extract_dictionary_words(knowledge)
 
     # it will initialize match and response containers
@@ -99,7 +98,12 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
 
     if "genz_slang" in category_responses:
         response_parts.append(f"You're speaking fluent Gen Z 🔥 {category_responses['genz_slang']}")
-
+    
+    if "interrogative" in category_responses:
+        response_parts.append(f"\n {category_responses["interrogative"]}")
+        response_parts.append(f"\n {random.choice(get_knowledge(file_name = "almanac.json")[identify_entity(prompt)]["answers"])}")
+        
+        
     if "compliments" in category_responses and "objects" in category_responses:
         objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
         response_parts.append(f"It's lovely you're into {', '.join(objects_mentioned)} - {category_responses['objects']}")
@@ -120,15 +124,16 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
         response_parts.append(category_responses["default"])
 
     final_response = " ".join(response_parts)
-
+  
     # this part is for debugging only for checking if the logic is correct
-    final_response += f"\n🙂 Emotion: {emotion}"
-    if question:
-        final_response += " | ❓ Question detected"
-    if wants_list:
-        final_response += " | 📋 List intent"
-    if misspelled:
-        final_response += f" | 🛑 Possible typos: {', '.join(misspelled)}"
+    if debug_mode:
+        final_response += f"\n🙂 Emotion: {emotion}"
+        if question:
+            final_response += " | ❓ Question detected"
+        if wants_list:
+            final_response += " | 📋 List intent"
+        if misspelled:
+            final_response += f" | 🛑 Possible typos: {', '.join(misspelled)}"
 
     if remember:
         remember_message(file_name = file, role="bot", message=final_response)
@@ -144,12 +149,38 @@ def levenshtein(keyword1: str, keyword2: str) -> int:
 
 
 # * ========================================================================= ask question
-def ask_question(prompt: str) -> None:
-    pass
+def identify_entity(prompt: str) -> None:
+    tokens = tokenization(prompt)
+    almanac = get_knowledge(file_name="almanac.json")
+
+    # print("[🧠] Tokens:", tokens)
+
+    best_match = None
+    best_score = 0
+
+    for key, data in almanac.items():
+        score = 0
+        for keyword in data["keywords"]:
+            keyword_tokens = tokenization(keyword)
+            if all(word in tokens for word in keyword_tokens):
+                # print(keyword, keyword_tokens)
+                score += 1  # +1 per matched keyword
+
+        if score > best_score:
+            best_score = score
+            best_match = key
+            # print(f"[🔥] '{key}' scored {score} points")
+
+
+    return best_match or "Nvm I can't find any info about it, lmfao 💀👌"
+
 
 if __name__ == "__main__":
-        ask("hello")
-
+        # print(ask_question("Can you breakdown for me, what is rizz?"))
+        print(identify_entity("ok last one, how abot simp?"))
+        pass
+        
+       
         # TODO: required bot iNteractions:
         # responds to a list, like asking for recipee, best places
         # enable to identify, places, object
