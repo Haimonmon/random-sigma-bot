@@ -1,30 +1,110 @@
 [
     {
         "role": "bot",
-        "message": "Howdy partner \ud83e\udd20"
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad"
     },
     {
         "role": "prompter",
-        "message": "hello gello hello"
+        "message": "wassup wassup!!, i love cats btw"
     },
     {
         "role": "bot",
-        "message": "Yo yo yo! What's on your mind today?\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: gello"
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b Aww, you're vibing! Love that for you \u2764\ufe0f"
     },
     {
         "role": "prompter",
-        "message": "gello"
+        "message": "can you tell me about api?"
     },
     {
         "role": "bot",
-        "message": "huh? that ain't in my dictionary \ud83e\uddcd\u200d\u2642\ufe0f\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: gello"
+        "message": "\n That seems like something I can help with. Here's what I know: \n APIs are how software sends and receives information."
     },
     {
         "role": "prompter",
-        "message": "goodbye then haha"
+        "message": "hmmm, how about the gen z slang, rizz?"
     },
     {
         "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0.\n\ud83d\ude42 Emotion: \ud83d\ude10 Neutral | \ud83d\uded1 Possible typos: haha"
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 Dead \ud83d\ude02 that took me out \n You're asking about something interesting \u2014 let's dive in! \n That was some elite rizz."
+    },
+    {
+        "role": "prompter",
+        "message": "ok last one, how abot simp?"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 You\u2019re flexing that drip \ud83d\udca7\ud83d\udc5f \n Great question! Give me a moment to gather what I know... \n You already know it!"
+    },
+    {
+        "role": "prompter",
+        "message": "ok last one, how about simp?"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 Lowkey feel that. Highkey too tho \ud83d\udc40 \n Let me try to explain that... \n We\u2019re locked in \ud83d\udddd\ufe0f"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
+    },
+    {
+        "role": "prompter",
+        "message": "ok last one, how about simp?"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 No cap, that\u2019s facts \ud83e\udde2\ud83d\udd25 \n You're asking about something interesting \u2014 let's dive in! \n Simpin\u2019 detected \ud83d\udc98"
+    },
+    {
+        "role": "prompter",
+        "message": "ok last one, how about simp?"
+    },
+    {
+        "role": "bot",
+        "message": "You're speaking fluent Gen Z \ud83d\udd25 You\u2019re not being extra \u2014 you\u2019re being ICONIC \ud83d\udd25 \n Let me try to explain that... \n You're down bad, huh?"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
+    },
+    {
+        "role": "prompter",
+        "message": "hello againn!!, whats an api?"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n That seems like something I can help with. Here's what I know: \n An API is a set of tools that lets programs talk to each other."
+    },
+    {
+        "role": "prompter",
+        "message": "how about database?"
+    },
+    {
+        "role": "bot",
+        "message": "\n Let me try to explain that... \n SQL is the language used to talk to many databases."
+    },
+    {
+        "role": "prompter",
+        "message": "ok thanksss and goodbye :)"
+    },
+    {
+        "role": "bot",
+        "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "i love cats btw, bye again lamo"
+    },
+    {
+        "role": "bot",
+        "message": "You're spreading good energy, keep it up \ud83c\udf08 Farewell, bestie. Spiraling respectfully \ud83d\ude43."
     }
 ]

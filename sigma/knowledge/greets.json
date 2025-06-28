@@ -1,8 +1,8 @@
 {
   "greetings": {
     "keyword": [
-      "hello", "hi", "hey", "yo", "whats", "up", "sup",
-      "good", "morning", "afternoon", "evening", "hiya", "howdy", "heyo"
+      "hello", "hi", "hey", "yo", "wazzup", "sup",
+      "good", "morning", "afternoon", "evening", "hiya", "howdy", "heyo", "wassup", "cuz"
     ],
     "response": [
       "Heyyy! What's cookin'? 👋",
@@ -78,7 +78,7 @@
   },
   "genz_slang": {
     "keyword": [
-      "slay", "rizz", "sus", "bet", "lit", "vibe", "cap", "no cap",
+      "slay", "rizz", "sus", "bet", "lit", "vibe", "cap", "no cap","skibidi", "gyatt",
       "snatched", "flex", "drip", "mood", "cheugy", "dead", "ghost", "simp", "yeet", "fr", "salty", "extra"
     ],
     "response": [
@@ -92,6 +92,20 @@
       "That mood is so relatable rn 😭",
       "You’re not being extra — you’re being ICONIC 🔥",
       "Lowkey feel that. Highkey too tho 👀"
+    ]
+  },
+  "interrogative": {
+    "keyword" : [
+          "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information",
+          "explain", "explains", "explained", "describe", "describes", "described", "tell", "give",
+          "example", "examples", "elaborate", "thing", "thingy", "stuff", "identify", "object", "can",
+          "fact", "facts", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about", "?"
+    ],
+    "response": [
+        "Great question! Give me a moment to gather what I know...",
+        "Let me try to explain that...",
+        "That seems like something I can help with. Here's what I know:",
+        "You're asking about something interesting — let's dive in!"
     ]
   },
   "default": {

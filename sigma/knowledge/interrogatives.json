@@ -2,25 +2,18 @@
     "what": {
         "type": "info",
         "keywords" : [
-            "what","meaning","mean","define","definition","info","information","explain","describe","describe this","tell me","give me",
-            "example",
-            "examples",
-            "elaborate",
-            "thing",
-            "thingy",
-            "stuff",
-            "identify",
-            "explanation",
-            "content",
-            "object",
-            "details",
-            "fact",
-            "facts",
-            "clarify",
-            "detail",
-            "overview",
-            "data",
-            "breakdown"
+            "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information",
+            "explain", "explains", "explained", "describe", "describes", "described", "tell", "give",
+            "example", "examples", "elaborate", "thing", "thingy", "stuff", "identify", "object", "can",
+            "fact", "facts", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about"
+        ]
+    },
+    "who": {
+        "type": "person",
+        "keywords": [
+            "who", "who's", "whos", "is", "this", "am i", "that", "whom", "whose", "created",
+            "made", "wrote", "founded", "invented", "authored", "found", "built", "isresponsible",
+            "behind", " runs", " owns", " developed", " designed", "there", "can", "should"
         ]
     }
 }
