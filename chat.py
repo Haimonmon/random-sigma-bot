@@ -70,7 +70,7 @@ def generate_previous_chats(file_name: str, prompter_name: str, bot_name: str) -
             )
 
 
-def typing_animation(prompt: str, duration: float = 0.05) -> None:
+def typing_animation(prompt: str, bot_name: str, duration: float = 0.05) -> None:
     """ 
     just typing animation similar to chatgpt response.
 
@@ -85,7 +85,7 @@ def typing_animation(prompt: str, duration: float = 0.05) -> None:
     with Live(console=console, refresh_per_second=20) as live:
         for char in prompt:
             typed.append(char)
-            live.update(Panel.fit(typed, border_style="magenta"))
+            live.update(Panel.fit(typed, border_style="magenta", title = bot_name, title_align = "left"))
             time.sleep(duration)  # * How fast it will type
 
 
@@ -110,21 +110,21 @@ def generate_chat_head(role: Literal["prompter", "bot"], response: str, prompter
         "bot": f"🗿 {bot_name}"
     }
 
-    chat_head_response: str = f"\n [ {chat_head_icons[role]} ] : {response} \n"
+    chat_head_response: str = f"\n {response} \n"
 
     # * Each roles need to have unique color chat heads.
     if role == "prompter":
         chat_head_text = Text(chat_head_response, style="bold orange1")
-        chat_head_panel = Panel.fit(chat_head_text, border_style="orange1")
+        chat_head_panel = Panel.fit(chat_head_text, border_style="orange1", title = chat_head_icons[role], title_align = "right")
         console.print(chat_head_panel, justify="right")
     else:
         chat_head_text = Text(chat_head_response, style="bold magenta")
-        chat_head_panel = Panel.fit(chat_head_text, border_style="magenta")
+        chat_head_panel = Panel.fit(chat_head_text, border_style="magenta", title = chat_head_icons[role], title_align = "left")
 
         if not enable_typing_animation:
             console.print(chat_head_panel, justify="left")
         else:
-            typing_animation(prompt=chat_head_response, duration=0.03)
+            typing_animation(prompt=chat_head_response, bot_name = chat_head_icons[role], duration=0.03)
 
 
 def display_header(header_text: str, sub_header_text: str, title_header_text: str) -> None:
