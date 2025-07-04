@@ -1,8 +1,8 @@
 {
   "greetings": {
     "keyword": [
-      "hello", "hi", "hey", "yo", "wazzup", "sup", "whats" ,"up", "what", "how", "how's",
-      "good", "morning", "afternoon", "evening", "hiya", "howdy", "heyo", "wassup", "cuz"
+      "hello", "hi", "hey", "yo", "wazzup", "sup", "whats up?", "what", "how", "how's", "morning",
+      "good morning", "good afternoon", "good evening", "hiya", "howdy", "heyo", "wassup", "cuz"
     ],
     "response": [
       "Heyyy! What's cookin'? 👋",
@@ -19,9 +19,9 @@
   },
   "farewell": {
     "keyword": [
-      "bye", "goodbye", "seeya", "later", "peace", "ciao", "sayonara", "adios",
+      "bye", "goodbye", "see you", "later", "peace", "ciao", "sayonara", "adios",
       "smell ya later", "talk to you later", "gtg", "g2g", "i'm out", "i gotta go",
-      "farewell", "take care", "i'll be going", "im leaving", "gotta dip", "exit"
+      "farewell", "take care", "im leaving", "gotta dip", "exit"
     ],
     "response": [
       "Logging off with the elegance of a Windows shutdown sound. 🫡",
@@ -36,6 +36,51 @@
       "Retreating to recharge my social battery 🔋🫥.",
       "Logging off. It’s brb not goodbye 🍪🧠.",
       "That convo was elite. Peace and blessings 📉✨."
+    ]
+  },
+  "positive": {
+    "keyword": [
+      "happy", "excited", "lovely", "amazed"
+    ],
+    "response": [
+      "im excited 😝",
+      "feelin' the vibes fr 🌈",
+      "life's good rn 💫",
+      "can't stop smiling 😄",
+      "this energy is unmatched 🔥",
+      "im happy and it shows 💖",
+      "yo this is amazinggg 😍",
+      "literal serotonin boost ☀️",
+      "loving this moment 🫶",
+      "vibes on 100 right now 🚀"
+    ]
+  },
+  "negative": {
+    "keyword": [
+      "sad", "depressed", "down", "blue", "gloomy", "upset", "unhappy", "low", "heartbroken", "miserable",
+      "worthless", "anxious", "tired", "drained", "broken", "lost", "hopeless", "crying", "overwhelmed", "done", "not"
+    ],
+    "response": [
+      "It's okay to feel down sometimes 💔",
+      "sending virtual hugs 🫂",
+      "you got this, fr 🫡",
+      "bad days don't last, promise 🕊️",
+      "your feelings are valid 💭",
+      "if you’re reading this, you’re not alone 💙",
+      "crying is just your eyes doing a detox 🧼",
+      "we ride the waves together 🌊",
+      "take a deep breath, you're stronger than you think 🌬️",
+      "you're allowed to feel this way 🫶",
+      "pause. breathe. try again 🌱",
+      "life’s heavy sometimes, but so are you — and you're still standing 🧍",
+      "feeling empty is a feeling too, and it matters 🧊",
+      "you don’t need to have it all figured out rn 🕰️",
+      "you’re not weak for needing rest 💤",
+      "sending comfort in emoji form 💗📦",
+      "i’m proud of you for just existing today 🐢",
+      "feelings aren’t facts — ride them out 🛶",
+      "you matter, even when your brain says otherwise 🧠❌",
+      "let it out. no judgment. just vibes 🤍"
     ]
   },
   "compliments": {
@@ -96,9 +141,9 @@
   },
   "interrogative": {
     "keyword" : [
-          "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information",
+          "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information", "me", "why",
           "explain", "explains", "explained", "describe", "describes", "described", "tell", "give", "question",
-          "example", "examples", "elaborate", "thing", "thingy", "stuff", "identify", "object", "can",
+          "example", "examples", "elaborate", "thing", "thingy", "stuff", "identify", "object", "can", "do",
           "fact", "facts", "an", "a", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about", "?"
     ],
     "response": [

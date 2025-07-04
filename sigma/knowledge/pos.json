@@ -1,0 +1,54 @@
+{
+    "not_defined": [],
+    "the": [
+        "adverb",
+        "preposition"
+    ],
+    "quick": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb"
+    ],
+    "fox": [
+        "noun",
+        "verb"
+    ],
+    "jumps": [
+        "noun",
+        "verb"
+    ],
+    "over": [
+        "noun",
+        "verb",
+        "adjective",
+        "adverb",
+        "preposition",
+        "interjection"
+    ],
+    "lazy": [
+        "noun",
+        "verb",
+        "adjective"
+    ],
+    "dog": [
+        "noun",
+        "verb"
+    ],
+    "can": [
+        "verb",
+        "noun"
+    ],
+    "you": [
+        "verb",
+        "pronoun"
+    ],
+    "help": [
+        "noun",
+        "verb",
+        "interjection"
+    ],
+    "me": [
+        "pronoun"
+    ]
+}

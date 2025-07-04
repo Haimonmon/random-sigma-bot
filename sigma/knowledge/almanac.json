@@ -1,6 +1,6 @@
 {
     "api": {
-        "keywords": ["computer science","programming", "api", "a.p.i", "application programming interface", "endpoint", "interface"],
+        "keyword": ["computer science","programming", "api", "a.p.i", "application programming interface", "endpoint", "interface"],
         "answers": [
             "An API is a set of tools that lets programs talk to each other.",
             "It stands for Application Programming Interface.",
@@ -20,7 +20,7 @@
         ]
     },
     "chatbot": {
-        "keywords": ["computer science", "programming", "chatbot", "bot", "ai assistant", "text bot", "automated chat"],
+        "keyword": ["computer science", "programming", "chatbot", "bot", "ai assistant", "text bot", "automated chat"],
         "answers": [
             "A chatbot is a program that chats like a human.",
             "It's a virtual assistant that answers your questions.",
@@ -40,7 +40,7 @@
         ]
     },
    "variable": {
-        "keywords": ["computer science","programming", "variable", "value holder", "data storage", "assignment"],
+        "keyword": ["computer science","programming", "variable", "value holder", "data storage", "assignment"],
         "answers": [
             "A variable stores data you can use and change later.",
             "It's like a labeled box that holds a value.",
@@ -58,7 +58,7 @@
         ]
     },
     "loop": {
-        "keywords": ["computer science","programming", "loop", "iteration", "repeat", "for loop", "while loop"],
+        "keyword": ["computer science","programming", "loop", "iteration", "repeat", "for loop", "while loop"],
         "answers": [
             "A loop lets you repeat actions in your code.",
             "Common types include for-loops and while-loops.",
@@ -76,7 +76,7 @@
         ]
     },
     "database": {
-        "keywords": ["computer science","programming", "database", "sql", "mysql", "postgres", "data storage"],
+        "keyword": ["computer science","programming", "database", "sql", "mysql", "postgres", "data storage"],
         "answers": [
             "A database stores and organizes data for easy access.",
             "Think of it like a digital filing cabinet.",
@@ -94,7 +94,7 @@
         ]
     },
     "function": {
-        "keywords": ["computer science","programming", "function", "method", "procedure", "routine", "def"],
+        "keyword": ["computer science","programming", "function", "method", "procedure", "routine", "def"],
         "answers": [
             "A function is a reusable block of code that performs a task.",
             "It's how you organize code into chunks.",
@@ -112,7 +112,7 @@
         ]
     },
     "frontend": {
-        "keywords": ["computer science","programming", "frontend", "client side", "user interface", "ui", "html css js"],
+        "keyword": ["computer science","programming", "frontend", "client side", "user interface", "ui", "html css js"],
         "answers": [
             "Frontend is the part of a website or app you can see and interact with.",
             "It's built with HTML, CSS, and JavaScript.",
@@ -130,7 +130,7 @@
         ]
     },
     "backend": {
-        "keywords": ["computer science","programming",  "backend", "server side", "api", "database connection", "logic"],
+        "keyword": ["computer science","programming",  "backend", "server side", "api", "database connection", "logic"],
         "answers": [
             "Backend is the behind-the-scenes brain of the app.",
             "It processes data, handles logic, and talks to the database.",
@@ -148,7 +148,7 @@
         ]
     },
     "algorithm": {
-        "keywords": ["computer science", "programming", "algorithm", "steps", "procedure", "instructions", "solve"],
+        "keyword": ["computer science", "programming", "algorithm", "steps", "procedure", "instructions", "solve"],
         "answers": [
             "An algorithm is a step-by-step process to solve a problem.",
             "It's like a recipe, but for your code.",
@@ -166,7 +166,7 @@
         ]
     },
     "slay": {
-        "keywords": ["gen z", "slay", "slaying", "she slayed", "king behavior", "serve"],
+        "keyword": ["gen z", "slay", "slaying", "she slayed", "king behavior", "serve"],
         "answers": [
             "SLAYYYY 🔥 Keep serving, legend.",
             "You just ate and left no crumbs 💅",
@@ -181,7 +181,7 @@
         ]
     },
     "goat": {
-        "keywords": ["gen z", "goat", "g.o.a.t", "greatest of all time", "legend", "iconic"],
+        "keyword": ["gen z", "goat", "g.o.a.t", "greatest of all time", "legend", "iconic"],
         "answers": [
             "You = certified G.O.A.T 🐐",
             "Greatest of all time? Say less 😤",
@@ -197,7 +197,7 @@
         ]
     },
     "no cap": {
-        "keywords": ["gen z", "no cap", "fr", "for real", "honest", "not lying"],
+        "keyword": ["gen z", "no cap", "fr", "for real", "honest", "not lying"],
         "answers": [
             "No cap detected 🧢❌",
             "Facts, no printer 🖨️",
@@ -212,7 +212,7 @@
         ]
     },
     "vibe": {
-        "keywords": ["gen z", "vibe", "vibes", "good vibes", "bad vibes", "vibing"],
+        "keyword": ["gen z", "vibe", "vibes", "good vibes", "bad vibes", "vibing"],
         "answers": [
             "Vibes = immaculate ✨",
             "You're radiating main character energy.",
@@ -227,7 +227,7 @@
         ]
     },
     "rizz": {
-        "keywords": ["gen z", "rizz", "charisma", "flirting", "pull", "smooth"],
+        "keyword": ["gen z", "rizz", "charisma", "flirting", "pull", "smooth"],
         "answers": [
             "Certified Rizzler 😎",
             "You've got game like a final boss.",
@@ -247,7 +247,7 @@
         ]
     },
     "ate": {
-        "keywords": ["gen z", "ate", "ate that", "no crumbs", "destroyed", "snapped"],
+        "keyword": ["gen z", "ate", "ate that", "no crumbs", "destroyed", "snapped"],
         "answers": [
             "Ate it up. No crumbs left. 💯",
             "You devoured that task, chef 👨‍🍳",
@@ -262,7 +262,7 @@
         ]
     },
     "sus": {
-        "keywords": ["gen z", "sus", "suspicious", "sussy", "among us", "sketchy"],
+        "keyword": ["gen z", "sus", "suspicious", "sussy", "among us", "sketchy"],
         "answers": [
             "That’s kinda sus not gonna lie 👀",
             "Impostor vibes detected 🕵️",
@@ -277,7 +277,7 @@
         ]
     },
     "mid": {
-        "keywords": ["gen z", "mid", "meh", "average", "eh", "not it"],
+        "keyword": ["gen z", "mid", "meh", "average", "eh", "not it"],
         "answers": [
             "Mid detected 😶",
             "Could’ve gone harder tbh.",
@@ -287,7 +287,7 @@
         ]
     },
     "bet": {
-        "keywords": ["gen z", "bet", "say less", "got it"],
+        "keyword": ["gen z", "bet", "say less", "got it"],
         "answers": [
             "Bet. I'm on it 🔥",
             "Say less — I got you.",
@@ -303,7 +303,7 @@
         ]
     },
     "dead": {
-        "keywords": ["gen z", "dead", "i’m dead", "lmao", "crying", "too funny"],
+        "keyword": ["gen z", "dead", "i’m dead", "lmao", "crying", "too funny"],
         "answers": [
             "💀💀💀 I can't breathe.",
             "Certified laugh explosion.",
@@ -313,7 +313,7 @@
         ]
     },
     "skibidi": {
-        "keywords": ["gen z", "skibidi", "sigma", "toilet", "gyatt", "random dance"],
+        "keyword": ["gen z", "skibidi", "sigma", "toilet", "random dance"],
         "answers": [
             "Skibidi bop yes yes 💃",
             "You’ve entered the Skibidi dimension.",
@@ -323,7 +323,7 @@
         ]
     },
     "gyatt": {
-        "keywords": ["gen z", "gyatt", "thicc", "dumptruck", "cake", "cheeks"],
+        "keyword": ["gen z", "gyatt", "thicc", "dumptruck", "cake", "cheeks"],
         "answers": [
             "GYATT DAMN 🍑",
             "Call that a certified double cheek moment.",
@@ -338,7 +338,7 @@
         ]
     },
     "cringe": {
-        "keywords": ["gen z", "cringe", "cringy", "secondhand embarrassment", "awk", "yikes"],
+        "keyword": ["gen z", "cringe", "cringy", "secondhand embarrassment", "awk", "yikes"],
         "answers": [
             "Oof. That was... cringe 💀",
             "I got secondhand lag from that one.",
@@ -353,7 +353,7 @@
         ]
     },
     "bussin": {
-        "keywords": ["gen z", "bussin", "delicious", "fire food", "gas", "hits"],
+        "keyword": ["gen z", "bussin", "delicious", "fire food", "gas", "hits"],
         "answers": [
             "This one’s bussin fr 🍔🔥",
             "Chef’s kiss! 👨‍🍳💋",
@@ -363,7 +363,7 @@
         ]
     },
     "simp": {
-        "keywords": ["gen z", "simp", "down bad", "obsessed", "thirsty", "soft"],
+        "keyword": ["gen z", "simp", "down bad", "obsessed", "thirsty", "soft"],
         "answers": [
             "Simpin’ detected 💘",
             "You're down bad, huh?",
@@ -377,8 +377,14 @@
             "Your feelings got more RAM than my server."
         ]
     },
+    "dizzy": {
+        "keyword": ["bot", "whats your name", "about you", "name", "introduce yourself"],
+        "answers": [
+            "I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages ✨"
+        ]
+    },
     "no answer": {
-        "keywords": [],
+        "keyword": [],
         "answers": [
             "Nvm I can't find any info about it, lmfao 💀👌"
         ]
