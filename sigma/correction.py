@@ -77,7 +77,7 @@ def best_match(word: str, choices: List["str"], threshhold: float = 0.75) -> str
         #     if option < best_match:
         #         best_match = option
 
-    return best_match if best_score >= threshhold else None
+    return best_match
 
 
 def split_word(word: str, keywords: List[str]) -> None:

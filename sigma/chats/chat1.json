@@ -1210,5 +1210,109 @@
     {
         "role": "bot",
         "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "byi"
+    },
+    {
+        "role": "bot",
+        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
+    },
+    {
+        "role": "prompter",
+        "message": "byi"
+    },
+    {
+        "role": "bot",
+        "message": "you're wildin' rn, idk what that means \ud83d\udc80"
+    },
+    {
+        "role": "prompter",
+        "message": "ok bye"
+    },
+    {
+        "role": "bot",
+        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
+    },
+    {
+        "role": "prompter",
+        "message": "byi"
+    },
+    {
+        "role": "bot",
+        "message": "bruh... say that again but like, human pls \ud83d\ude05"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
+    },
+    {
+        "role": "prompter",
+        "message": "henlo"
+    },
+    {
+        "role": "bot",
+        "message": "Wassup! Hit me with your thoughts \ud83d\udcad"
+    },
+    {
+        "role": "prompter",
+        "message": "ok byi"
+    },
+    {
+        "role": "bot",
+        "message": "yo that went way over my head \ud83d\ude35\u200d\ud83d\udcab"
+    },
+    {
+        "role": "prompter",
+        "message": "byi"
+    },
+    {
+        "role": "bot",
+        "message": "ngl that one lost me... try again? \ud83d\udc40"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
+    },
+    {
+        "role": "prompter",
+        "message": "byi"
+    },
+    {
+        "role": "bot",
+        "message": "i'm not built for that kinda question fr \ud83d\udc80"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
+    },
+    {
+        "role": "prompter",
+        "message": "byi"
+    },
+    {
+        "role": "bot",
+        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
     }
 ]
