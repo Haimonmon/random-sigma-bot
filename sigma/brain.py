@@ -1,7 +1,9 @@
 import re
 import random
+
 from typing import Dict, List
-from .memory import remember_message, get_knowledge, add_knowledge
+from .correction import normalize_prompt, tokenization
+from .learn import learn_word, remember_message, get_knowledge
 from .emotion import detect_emotion, is_question, detect_list_request, get_emotion_keywords
 
 common_words = {
@@ -10,9 +12,11 @@ common_words = {
     "does", "not", "but", "or", "if", "because", "then", "than", "too", "very", "just", "much", "more", "any"
 }
 
-def tokenization(prompt: str) -> List:
-    """ Seperating each word of the prompt """
-    return re.findall(r"[a-zA-Z0-9']+|[.,!?;]", prompt.lower())
+user_name = None
+is_goodbye = False
+
+def is_end_conversation() -> bool:
+    return is_goodbye
 
 
 def extract_dictionary_words(knowledge: Dict) -> set:
@@ -28,23 +32,8 @@ def basic_spellcheck(word: str, dictionary_words: set) -> bool:
     return word in dictionary_words
 
 
-def learn(response: str) -> None:
-    """
-    Captures user prompts by simply saving it into json file memory
-
-    (response: str) -> User prompt.
-    """
-    tokens = tokenization(response)
-    unknown = [word for word in tokens if word not in extract_dictionary_words(get_knowledge())]
-    if unknown:
-        entry = {
-            "message": response,
-            "suggested_keywords": unknown
-        }
-        add_knowledge(file_name = "learned.json", info = entry)
-
-
 def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"), file="chat1.json", remember: bool = True, debug_mode: bool = False) -> str:
+    global is_goodbye
     """
     Ask the bot any question and it will answer thruthfully.. i guess..
 
@@ -56,7 +45,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     ```
     """
     # Tokenize the input prompt into words/symbols
-    tokens = tokenization(prompt)
+    tokens = normalize_prompt(prompt = prompt, knowledge = knowledge)
     dictionary_words = extract_dictionary_words(knowledge)
 
     # it will initialize match and response containers
@@ -68,7 +57,6 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     emotion = detect_emotion(tokens)
     question = is_question(tokens, prompt)
     wants_list = detect_list_request(tokens)
-
     misspelled = [w for w in tokens if not basic_spellcheck(w, dictionary_words) and w.isalpha()]
 
     if remember:
@@ -100,7 +88,10 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
         matched_categories.append("default")
         category_responses["default"] = random.choice(knowledge["default"]["response"])
 
-    # * Treat it only as a greeting, remove interrogative
+    # * Treat it only as a greeting, remove interrogative ( Temporarily solution 💀👌✨ )
+    if (category_score.get("interrogative", 0) >= 2 and  category_score.get("greetings", 1) <= 2):
+        category_responses.pop("greetings", None)
+
     if (category_score.get("interrogative", 0) ==  category_score.get("greetings", 0)):
         category_responses.pop("interrogative", None)
     
@@ -110,7 +101,6 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     # * This chunk of code will create or construct a smart response
     response_parts = []
 
-    print(category_score)
     if "greetings" in category_responses:
         response_parts.append(category_responses["greetings"])
 
@@ -120,7 +110,6 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     if "interrogative" in category_responses:
         response_parts.append(f"\n {category_responses["interrogative"]}")
         response_parts.append(f"\n {random.choice(get_knowledge(file_name = "almanac.json")[identify_entity(prompt)]["answers"])}")
-        
         
     if "compliments" in category_responses and "objects" in category_responses:
         objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
@@ -137,6 +126,13 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
 
     if "farewell" in category_responses:
         response_parts.append(category_responses["farewell"])
+        is_goodbye = True
+
+    if "positive" in category_responses:
+        response_parts.append(category_responses["positive"])
+    
+    if "negative"in category_responses:
+        response_parts.append(category_responses["negative"])
 
     if "default" in category_responses:
         response_parts.append(category_responses["default"])
@@ -154,23 +150,26 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
             final_response += f" | 🛑 Possible typos: {', '.join(misspelled)}"
 
     if remember:
-        remember_message(file_name = file, role="bot", message=final_response)
+        remember_message(file_name = file, role="bot", message = final_response)
 
     return final_response
 
 
+def normalize_tokens(tokens: List[str]) -> List[str]:
+    normalized = []
+    for token in tokens:
+        normalized.extend(tokenization(token))
+    return normalized
+
+
 def keyword_in_tokens(keyword: str, tokens: List[str]) -> bool:
     keyword_tokens = tokenization(keyword)
-    for i in range(len(tokens) - len(keyword_tokens) + 1):
-        if tokens[i:i+len(keyword_tokens)] == keyword_tokens:
+    flat_tokens = normalize_tokens(tokens)
+
+    for i in range(len(flat_tokens) - len(keyword_tokens) + 1):
+        if flat_tokens[i:i+len(keyword_tokens)] == keyword_tokens:
             return True
     return False
-
-def levenshtein(keyword1: str, keyword2: str) -> int:
-    """
-    A function that scales the misspelled words wrongness.
-    """
-    pass
 
 
 # * ========================================================================= ask question
@@ -185,7 +184,7 @@ def identify_entity(prompt: str) -> None:
 
     for key, data in almanac.items():
         score = 0
-        for keyword in data["keywords"]:
+        for keyword in data["keyword"]:
             keyword_tokens = tokenization(keyword)
             if all(word in tokens for word in keyword_tokens):
                 # print(keyword, keyword_tokens)
@@ -195,7 +194,6 @@ def identify_entity(prompt: str) -> None:
             best_score = score
             best_match = key
             # print(f"[🔥] '{key}' scored {score} points")
-
 
     return best_match or "no answer"
 
