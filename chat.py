@@ -203,20 +203,10 @@ def display_chat_window(prompter_name: str, bot_name: str, selected_chat_session
         )
 
         # * Exit detection of chat session.
-        if say_goodbye(prompt):
+        if dizzy.is_end_conversation():
             break
 
 
-def say_goodbye(prompt: str) -> bool:
-    """ 
-    Make sure the user says a goodbye to its best friend 
-    """
-    for keyword in dizzy.tokenization(prompt):
-        if keyword in dizzy.get_knowledge("greets.json")["farewell"]["keyword"]:
-            return True
-    return False
-    
-    
 def sigma_bot(your_name: str = "You", bot_name = "Dizzy") -> None:
     """ 
     The main of the bot application
