@@ -69,6 +69,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
             return
 
     # Match responses by category and randomize the response.
+    
     for category, data in knowledge.items():
         for keyword in data["keyword"]:
             if keyword_in_tokens(keyword, tokens):
@@ -109,7 +110,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     
     if "interrogative" in category_responses:
         response_parts.append(f"\n {category_responses["interrogative"]}")
-        response_parts.append(f"\n {random.choice(get_knowledge(file_name = "almanac.json")[identify_entity(prompt)]["answers"])}")
+        response_parts.append(f"\n {random.choice(get_knowledge(file_name = "almanac.json")[identify_entity(tokens)]["answers"])}")
         
     if "compliments" in category_responses and "objects" in category_responses:
         objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
@@ -163,9 +164,11 @@ def normalize_tokens(tokens: List[str]) -> List[str]:
 
 
 def keyword_in_tokens(keyword: str, tokens: List[str]) -> bool:
+    
     keyword_tokens = tokenization(keyword)
     flat_tokens = normalize_tokens(tokens)
 
+    
     for i in range(len(flat_tokens) - len(keyword_tokens) + 1):
         if flat_tokens[i:i+len(keyword_tokens)] == keyword_tokens:
             return True
@@ -173,11 +176,10 @@ def keyword_in_tokens(keyword: str, tokens: List[str]) -> bool:
 
 
 # * ========================================================================= ask question
-def identify_entity(prompt: str) -> None:
-    tokens = tokenization(prompt)
+def identify_entity(tokens: str) -> None:
     almanac = get_knowledge(file_name="almanac.json")
 
-    # print("[🧠] Tokens:", tokens)
+    print("[🧠] Tokens:", tokens)
 
     best_match = None
     best_score = 0
@@ -186,6 +188,7 @@ def identify_entity(prompt: str) -> None:
         score = 0
         for keyword in data["keyword"]:
             keyword_tokens = tokenization(keyword)
+            # print(tokens)
             if all(word in tokens for word in keyword_tokens):
                 # print(keyword, keyword_tokens)
                 score += 1  # +1 per matched keyword

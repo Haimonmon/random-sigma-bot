@@ -59,7 +59,7 @@ def hybrid_score(a: str, b: str) -> float:
     return round((lev + jac) / 2, 2)
 
 
-def best_match(word: str, choices: List["str"], threshhold: float = 0.75) -> str:
+def best_match(word: str, choices: List["str"], threshhold: float = 0.5) -> str:
     """ identifies whats the best match on the given word with the given list of choices with possible matches """
     if word in choices:
         return word
@@ -77,7 +77,7 @@ def best_match(word: str, choices: List["str"], threshhold: float = 0.75) -> str
         #     if option < best_match:
         #         best_match = option
 
-    return best_match
+    return best_match if best_score >= threshhold else None
 
 
 def split_word(word: str, keywords: List[str]) -> None:
