@@ -378,7 +378,7 @@
         ]
     },
     "dizzy": {
-        "keyword": ["bot", "whats your name", "about you", "name", "introduce yourself"],
+        "keyword": ["bot", "whats your name", "about you", "name", "introduce", "yourself", "who"],
         "answers": [
             "I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages ✨"
         ]

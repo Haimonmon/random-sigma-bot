@@ -1,8 +1,8 @@
 {
   "greetings": {
     "keyword": [
-      "hello", "hi", "hey", "yo", "wazzup", "sup", "whats up?", "what", "how", "how's", "morning",
-      "good morning", "good afternoon", "good evening", "hiya", "howdy", "heyo", "wassup", "cuz"
+      "hello", "hi", "hey", "yow!", "wazzup", "sup", "whats up?",
+      "good morning", "good afternoon", "good evening", "ohayo", "howdy", "heyo", "wassup"
     ],
     "response": [
       "Heyyy! What's cookin'? 👋",
@@ -19,8 +19,8 @@
   },
   "farewell": {
     "keyword": [
-      "bye", "goodbye", "see you", "later", "peace", "ciao", "sayonara", "adios",
-      "smell ya later", "talk to you later", "gtg", "g2g", "i'm out", "i gotta go",
+      "bye", "good bye", "see you", "later", "peace", "ciao", "sayonara", "adios",
+      "talk later", "gtg", "g2g", "i'm out", "i gotta go",
       "farewell", "take care", "im leaving", "gotta dip", "exit"
     ],
     "response": [
@@ -40,7 +40,7 @@
   },
   "positive": {
     "keyword": [
-      "happy", "excited", "lovely", "amazed"
+      "happy", "excited", "lovely", "amazed","thanks", "feeling"
     ],
     "response": [
       "im excited 😝",
@@ -57,8 +57,8 @@
   },
   "negative": {
     "keyword": [
-      "sad", "depressed", "down", "blue", "gloomy", "upset", "unhappy", "low", "heartbroken", "miserable",
-      "worthless", "anxious", "tired", "drained", "broken", "lost", "hopeless", "crying", "overwhelmed", "done", "not"
+      "sad", "depressed", "down", "blue", "gloomy", "upset", "unhappy", "low", "heartbroken", "miserable", "hate",
+      "worthless", "anxious", "tired", "drained", "broken", "lost", "hopeless", "crying", "overwhelmed", "feeling"
     ],
     "response": [
       "It's okay to feel down sometimes 💔",
@@ -98,7 +98,7 @@
   },
   "objects": {
     "keyword": [
-      "flowers", "books", "music", "coffee", "cat", "dog", "art", "code", "computer", "sunset"
+      "flowers", "books", "music", "coffee", "art", "code", "computer", "sunset"
     ],
     "response": [
       "Ooo I love that too 🌸",
@@ -110,7 +110,7 @@
   },
   "places": {
     "keyword": [
-      "place", "places", "city", "town", "travel", "visit", "japan", "paris", "italy", "beach", "mountain"
+      "place", "places", "city", "town", "travel", "visit", "japan", "paris", "italy", "beach", "mountain", "go", "going", "on my way"
     ],
     "response": [
       "You should def check out Kyoto, it's zen AF 🇯🇵",
@@ -123,8 +123,8 @@
   },
   "genz_slang": {
     "keyword": [
-      "slay", "rizz", "sus", "bet", "lit", "vibe", "cap", "no cap","skibidi", "gyatt",
-      "snatched", "flex", "drip", "mood", "cheugy", "dead", "ghost", "simp", "yeet", "fr", "salty", "extra"
+      "slay", "rizz", "sus", "bet", "vibe", "cap", "no cap","skibidi", "gyatt",
+      "flex", "drip", "simp", "yeet", "fr"
     ],
     "response": [
       "Okay slayyy 💅💯",
@@ -141,10 +141,10 @@
   },
   "interrogative": {
     "keyword" : [
-          "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information", "me", "why",
+          "what", "whats", "what's", "is", "meaning", "mean", "define", "definition", "info", "information", "why",
           "explain", "explains", "explained", "describe", "describes", "described", "tell", "give", "question",
-          "example", "examples", "elaborate", "thing", "thingy", "stuff", "identify", "object", "can", "do",
-          "fact", "facts", "an", "a", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about", "?"
+          "example", "examples", "elaborate", "identify", "can", "are", "who",
+          "fact", "facts", "clarify", "overview", "details", "detail", "data", "breakdown", "content", "about", "?"
     ],
     "response": [
         "Great question! Give me a moment to gather what I know...",
