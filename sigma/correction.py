@@ -59,7 +59,7 @@ def hybrid_score(a: str, b: str) -> float:
     return round((lev + jac) / 2, 2)
 
 
-def best_match(word: str, choices: List["str"], threshhold: float = 0.5) -> str:
+def best_match(word: str, choices: List["str"], threshhold: float = 0.55) -> str:
     """ identifies whats the best match on the given word with the given list of choices with possible matches """
     if word in choices:
         return word
@@ -72,11 +72,12 @@ def best_match(word: str, choices: List["str"], threshhold: float = 0.5) -> str:
         if score > best_score:
             best_match = option
             best_score = score
-            # print(best_match, option, best_score)
+            # print(word, best_match, option, best_score)
         # elif score == best_score:
         #     if option < best_match:
         #         best_match = option
 
+    # print('🌾', best_match)
     return best_match if best_score >= threshhold else None
 
 
@@ -110,35 +111,74 @@ def check_keyword(word: str, keywords: List[str]) -> None:
     return None
 
 
-def normalize_prompt(prompt: str, knowledge: Dict[str, List[str]]) -> List[str]:
-    """ Automatically tokenizes and normalizes jumbled/misspelled words """
-    tokens: List[str] = tokenization(prompt)
-    keywords: List[str] = join_keywords(knowledge)    
-    normalized = []
+# def normalize_prompt(prompt: str, knowledge: Dict[str, List[str]]) -> List[str]:
+#     """ Automatically tokenizes and normalizes jumbled/misspelled words """
+#     tokens: List[str] = tokenization(prompt)
+#     keywords: List[str] = join_keywords(knowledge)    
+#     normalized = []
   
-    for word in tokens:
-        if word in keywords:
-            normalized.append(word)
-            continue
+#     for word in tokens:
+#         if word in keywords:
+#             print("📎", word)
+#             normalized.append(word)
+#             continue
 
-        word_splitted = split_word(word, keywords)
-        word_mispelled = best_match(word, keywords)
-        phrase_check = check_keyword(word, keywords)
+#         word_splitted = split_word(word, keywords)
+#         word_mispelled = best_match(word, keywords)
+#         phrase_check = check_keyword(word, keywords)
 
-        if phrase_check:
-            normalized.extend(phrase_check)
-            continue
+#         if phrase_check:
+#             normalized.extend(phrase_check)
+#             continue
 
-        if word_splitted:
-            normalized.extend(word_splitted)
-            continue
+#         if word_splitted:
+#             normalized.extend(word_splitted)
+#             continue
 
-        if word_mispelled:
-            normalized.append(word_mispelled)
-            continue
+#         if word_mispelled:
+#             normalized.append(word_mispelled)
+#             continue
+    
+#     return normalized
+
+
+def normalize_prompt(prompt: str, knowledge: Dict[str, List[str]], threshold: float = 0.55) -> List[str]:
+    """ Automatically tokenizes and normalizes jumbled/misspelled words """
+    tokens = tokenization(prompt)
+    keywords: List[str] = join_keywords(knowledge)
+    max_len = max(len(tokenization(kw)) for kw in knowledge)
+    i = 0
+    normalized = []
+
+    while i < len(tokens):
+        best_match = None
+        best_score = 0
+        best_span = 1
+
+        for span in range(1, max_len + 1):
+            if i + span > len(tokens):
+                break
+
+            candidate = " ".join(tokens[i:i+span])
+            for phrase in keywords:
+                score = hybrid_score(candidate, phrase)
+                if score > best_score:
+                    best_match = phrase
+                    best_score = score
+                    best_span = span
+
+        if best_score >= threshold:
+            normalized.append(best_match)
+            i += best_span
+        else:
+            split = split_word(tokens[i], keywords)
+            if split:
+                normalized.extend(split)
+            else:
+                normalized.append(tokens[i])
+            i += 1
 
     return normalized
-
 
 def join_keywords(knowledge: Dict[str, List[str]]) -> List[str]:
     """ Joins all of the keywords known in greets.json into one Array """
@@ -150,9 +190,23 @@ def join_keywords(knowledge: Dict[str, List[str]]) -> List[str]:
             if keyword not in seen:
                 combined.append(keyword)
                 seen.add(keyword)
+
+            # tokens = tokenization(keyword)
+            # for token in tokens:
+            #     if token not in seen:
+            #         combined.append(token)
+            #         seen.add(token)
     
     almanac: Dict[str, Any] = get_knowledge("almanac.json")
-    combined = list(seen.union(almanac.keys()))
+    for key, value in almanac.items():
+        if key not in seen:
+            combined.append(key)
+            seen.add(key)
+        
+        for keyword in value["keyword"]:
+            if keyword not in seen:
+                combined.append(keyword)
+                seen.add(keyword)
 
     return combined
 
