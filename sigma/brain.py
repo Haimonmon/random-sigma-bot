@@ -69,12 +69,13 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
             return
 
     # Match responses by category and randomize the response.
-    
+    print(tokens)
     for category, data in knowledge.items():
         for keyword in data["keyword"]:
             if keyword_in_tokens(keyword, tokens):
                 # * increment score for each match
                 category_score[category] = category_score.get(category, 0) + 1
+                # print(category, keyword)
 
                 # * add matched category once
                 if category not in matched_categories:
@@ -89,18 +90,22 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
         matched_categories.append("default")
         category_responses["default"] = random.choice(knowledge["default"]["response"])
 
-    # * Treat it only as a greeting, remove interrogative ( Temporarily solution 💀👌✨ )
-    if (category_score.get("interrogative", 0) >= 2 and  category_score.get("greetings", 1) <= 2):
-        category_responses.pop("greetings", None)
 
-    if (category_score.get("interrogative", 0) ==  category_score.get("greetings", 0)):
-        category_responses.pop("interrogative", None)
+    # * Treat it only as a greeting, remove interrogative ( Temporarily solution 💀👌✨ )
+    # if (category_score.get("interrogative", 0) >= 2 and  category_score.get("greetings", 1) <= 2):
+    #     category_responses.pop("greetings", None)
+
+    # if (category_score.get("interrogative", 0) ==  category_score.get("greetings", 0)):
+    #     category_responses.pop("interrogative", None)
     
-    if (category_score.get("interrogative", 0) <= 2 and category_score.get("greetings", 0) > 1):
-        category_responses.pop("interrogative", None)
+    # if (category_score.get("interrogative", 0) <= 2 and category_score.get("greetings", 0) > 1):
+    #     category_responses.pop("interrogative", None)
     
     # * This chunk of code will create or construct a smart response
     response_parts = []
+
+    # print(category_responses)
+    # print(category_score)
 
     if "greetings" in category_responses:
         response_parts.append(category_responses["greetings"])
@@ -125,7 +130,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     if "places" in category_responses:
         response_parts.append(category_responses["places"])
 
-    if "farewell" in category_responses:
+    if "farewell" in category_responses and list(category_responses.keys()) == ["farewell"]:
         response_parts.append(category_responses["farewell"])
         is_goodbye = True
 
@@ -153,6 +158,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     if remember:
         remember_message(file_name = file, role="bot", message = final_response)
 
+ 
     return final_response
 
 
@@ -164,13 +170,14 @@ def normalize_tokens(tokens: List[str]) -> List[str]:
 
 
 def keyword_in_tokens(keyword: str, tokens: List[str]) -> bool:
-    
     keyword_tokens = tokenization(keyword)
     flat_tokens = normalize_tokens(tokens)
 
-    
+    # if len(keyword_tokens) > 1:
+    #     print(keyword_tokens, flat_tokens)
+
     for i in range(len(flat_tokens) - len(keyword_tokens) + 1):
-        if flat_tokens[i:i+len(keyword_tokens)] == keyword_tokens:
+        if flat_tokens[i:i + len(keyword_tokens)] == keyword_tokens:
             return True
     return False
 
@@ -179,7 +186,7 @@ def keyword_in_tokens(keyword: str, tokens: List[str]) -> bool:
 def identify_entity(tokens: str) -> None:
     almanac = get_knowledge(file_name="almanac.json")
 
-    print("[🧠] Tokens:", tokens)
+    # print("[🧠] Tokens:", tokens)
 
     best_match = None
     best_score = 0
