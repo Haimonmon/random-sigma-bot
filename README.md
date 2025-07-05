@@ -20,4 +20,4 @@ Planned features to simple bot ( No External NLP Libraries ).
 
 ` memory.py ` - Contains load, saving data on json files
 
-[ README IMPROVE SOON ]
+[ PROJECT ON HOLD ] The project development has stop for now and will continue its development soon.
