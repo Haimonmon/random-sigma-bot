@@ -111,37 +111,6 @@ def check_keyword(word: str, keywords: List[str]) -> None:
     return None
 
 
-# def normalize_prompt(prompt: str, knowledge: Dict[str, List[str]]) -> List[str]:
-#     """ Automatically tokenizes and normalizes jumbled/misspelled words """
-#     tokens: List[str] = tokenization(prompt)
-#     keywords: List[str] = join_keywords(knowledge)    
-#     normalized = []
-  
-#     for word in tokens:
-#         if word in keywords:
-#             print("📎", word)
-#             normalized.append(word)
-#             continue
-
-#         word_splitted = split_word(word, keywords)
-#         word_mispelled = best_match(word, keywords)
-#         phrase_check = check_keyword(word, keywords)
-
-#         if phrase_check:
-#             normalized.extend(phrase_check)
-#             continue
-
-#         if word_splitted:
-#             normalized.extend(word_splitted)
-#             continue
-
-#         if word_mispelled:
-#             normalized.append(word_mispelled)
-#             continue
-    
-#     return normalized
-
-
 def normalize_prompt(prompt: str, knowledge: Dict[str, List[str]], threshold: float = 0.55) -> List[str]:
     """ Automatically tokenizes and normalizes jumbled/misspelled words """
     tokens = tokenization(prompt)

@@ -3,33 +3,20 @@ import random
 
 from typing import Dict, List
 from .correction import normalize_prompt, tokenization
-from .learn import learn_word, remember_message, get_knowledge
+from .learn import know_prompter_name, remember_message, get_knowledge
 from .emotion import detect_emotion, is_question, detect_list_request, get_emotion_keywords
 
-common_words = {
-    "i", "im", "am", "and", "so", "about", "you", "your", "my", "me", "we", "us", "the", "a", "an", "to", "in", "on",
-    "for", "of", "is", "are", "it", "this", "that", "be", "with", "at", "as", "was", "were", "have", "has", "do",
-    "does", "not", "but", "or", "if", "because", "then", "than", "too", "very", "just", "much", "more", "any"
-}
+# common_words = {
+#     "i", "im", "am", "and", "so", "about", "you", "your", "my", "me", "we", "us", "the", "a", "an", "to", "in", "on",
+#     "for", "of", "is", "are", "it", "this", "that", "be", "with", "at", "as", "was", "were", "have", "has", "do",
+#     "does", "not", "but", "or", "if", "because", "then", "than", "too", "very", "just", "much", "more", "any"
+# }
 
-user_name = None
+
 is_goodbye = False
 
 def is_end_conversation() -> bool:
     return is_goodbye
-
-
-def extract_dictionary_words(knowledge: Dict) -> set:
-    """ It will detect typos (by checking if each word exists in this set) also to avoid false positives on common words like "i", "and", "so" """
-    extracted = set()
-    for category in knowledge.values():
-        extracted.update(category.get("keyword", []))
-    return extracted | common_words | get_emotion_keywords()
-
-
-def basic_spellcheck(word: str, dictionary_words: set) -> bool:
-    """ Basic spell check """
-    return word in dictionary_words
 
 
 def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"), file="chat1.json", remember: bool = True, debug_mode: bool = False) -> str:
@@ -46,18 +33,11 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
     """
     # Tokenize the input prompt into words/symbols
     tokens = normalize_prompt(prompt = prompt, knowledge = knowledge)
-    dictionary_words = extract_dictionary_words(knowledge)
 
     # it will initialize match and response containers
     category_score = {}
     matched_categories = []
     category_responses = {}
-
-    # It will analyze prompt emotion, check if it's a question, list request, or contains misspellings
-    emotion = detect_emotion(tokens)
-    question = is_question(tokens, prompt)
-    wants_list = detect_list_request(tokens)
-    misspelled = [w for w in tokens if not basic_spellcheck(w, dictionary_words) and w.isalpha()]
 
     if remember:
         is_save = remember_message(file_name = file, role="prompter", message=prompt)
@@ -69,7 +49,7 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
             return
 
     # Match responses by category and randomize the response.
-    print(tokens)
+    # print(tokens)
     for category, data in knowledge.items():
         for keyword in data["keyword"]:
             if keyword_in_tokens(keyword, tokens):
@@ -85,75 +65,72 @@ def ask(prompt: str, knowledge: Dict = get_knowledge(file_name = "greets.json"),
                 if category not in category_responses:
                     category_responses[category] = random.choice(data["response"])
 
-    # Use default if nothing matched
+    # * Use default if nothing matched
     if not category_responses and "default" in knowledge:
         matched_categories.append("default")
         category_responses["default"] = random.choice(knowledge["default"]["response"])
 
-
-    # * Treat it only as a greeting, remove interrogative ( Temporarily solution 💀👌✨ )
-    # if (category_score.get("interrogative", 0) >= 2 and  category_score.get("greetings", 1) <= 2):
-    #     category_responses.pop("greetings", None)
-
-    # if (category_score.get("interrogative", 0) ==  category_score.get("greetings", 0)):
-    #     category_responses.pop("interrogative", None)
-    
-    # if (category_score.get("interrogative", 0) <= 2 and category_score.get("greetings", 0) > 1):
-    #     category_responses.pop("interrogative", None)
-    
-    # * This chunk of code will create or construct a smart response
     response_parts = []
 
     # print(category_responses)
     # print(category_score)
 
-    if "greetings" in category_responses:
-        response_parts.append(category_responses["greetings"])
+    # * Prioritize knowing the user
+    if "identity_name" in category_responses:
+        name = know_prompter_name(prompt)
+        if name:
+            response_parts.append(category_responses["identity_name"].replace("{name}", name))
+        else:
+            response_parts.append("hmmm sorry what?, i cant specify your name 😗")
 
-    if "genz_slang" in category_responses:
-        response_parts.append(f"You're speaking fluent Gen Z 🔥 {category_responses['genz_slang']}")
-    
-    if "interrogative" in category_responses:
-        response_parts.append(f"\n {category_responses["interrogative"]}")
-        response_parts.append(f"\n {random.choice(get_knowledge(file_name = "almanac.json")[identify_entity(tokens)]["answers"])}")
+    if "identity_name" not in category_responses:
+        if "greetings" in category_responses:
+            response_parts.append(category_responses["greetings"])
+
+        if "genz_slang" in category_responses:
+            response_parts.append(f"You're speaking fluent Gen Z 🔥 {category_responses['genz_slang']}")
         
-    if "compliments" in category_responses and "objects" in category_responses:
-        objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
-        response_parts.append(f"It's lovely you're into {', '.join(objects_mentioned)} - {category_responses['objects']}")
-        response_parts.append(category_responses["compliments"])
-    elif "compliments" in category_responses:
-        response_parts.append(category_responses["compliments"])
-    elif "objects" in category_responses:
-        objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
-        response_parts.append(f"Ah, {', '.join(objects_mentioned)} - {category_responses['objects']}")
+        if "interrogative" in category_responses:
+            response_parts.append(f"\n {category_responses["interrogative"]}")
+            response_parts.append(f"\n {random.choice(get_knowledge(file_name = "almanac.json")[identify_entity(tokens)]["answers"])}")
+            
+        if "compliments" in category_responses and "objects" in category_responses:
+            objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
+            response_parts.append(f"It's lovely you're into {', '.join(objects_mentioned)} - {category_responses['objects']}")
+            response_parts.append(category_responses["compliments"])
+        elif "compliments" in category_responses:
+            response_parts.append(category_responses["compliments"])
+        elif "objects" in category_responses:
+            objects_mentioned = [w for w in tokens if w in knowledge["objects"]["keyword"]]
+            response_parts.append(f"Ah, {', '.join(objects_mentioned)} - {category_responses['objects']}")
 
-    if "places" in category_responses:
-        response_parts.append(category_responses["places"])
+        if "places" in category_responses:
+            response_parts.append(category_responses["places"])
 
-    if "farewell" in category_responses and list(category_responses.keys()) == ["farewell"]:
-        response_parts.append(category_responses["farewell"])
-        is_goodbye = True
+        if "farewell" in category_responses and list(category_responses.keys()) == ["farewell"]:
+            response_parts.append(category_responses["farewell"])
+            is_goodbye = True
 
-    if "positive" in category_responses:
-        response_parts.append(category_responses["positive"])
-    
-    if "negative"in category_responses:
-        response_parts.append(category_responses["negative"])
+        if "positive" in category_responses:
+            response_parts.append(category_responses["positive"])
+        
+        if "negative"in category_responses:
+            response_parts.append(category_responses["negative"])
 
-    if "default" in category_responses:
-        response_parts.append(category_responses["default"])
+        if "default" in category_responses:
+            response_parts.append(category_responses["default"])
 
     final_response = " ".join(response_parts)
   
     # this part is for debugging only for checking if the logic is correct
-    if debug_mode:
-        final_response += f"\n🙂 Emotion: {emotion}"
-        if question:
-            final_response += " | ❓ Question detected"
-        if wants_list:
-            final_response += " | 📋 List intent"
-        if misspelled:
-            final_response += f" | 🛑 Possible typos: {', '.join(misspelled)}"
+    # if debug_mode:
+    #     final_response += f"\n🙂 Emotion: {emotion}"
+    #     if question:
+    #         final_response += " | ❓ Question detected"
+    #     if wants_list:
+    #         final_response += " | 📋 List intent"
+    #     if misspelled:
+    #         final_response += f" | 🛑 Possible typos: {', '.join(misspelled)}"
 
     if remember:
         remember_message(file_name = file, role="bot", message = final_response)

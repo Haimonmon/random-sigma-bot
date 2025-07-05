@@ -1,4 +1,15 @@
 {
+  "identity_name": {
+    "keyword": [
+      "i am", "im", "my name is", "call me", "its me", "me is", "ok my name is", "btw"
+    ],
+    "response": [
+      "Nice to meet you, {name}! 🫡",
+      "Got it, {name} — locked in 🔒",
+      "Remembering that name, {name} 🧠",
+      "Oki {name}, let's vibe 🤝"
+    ]
+  },
   "greetings": {
     "keyword": [
       "hello", "hi", "hey", "yow!", "wazzup", "sup", "whats up?",

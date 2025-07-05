@@ -5,103 +5,47 @@
     },
     {
         "role": "prompter",
-        "message": "hello there!"
+        "message": "hello dizzy, can you introduce yourself"
     },
     {
         "role": "bot",
-        "message": "Hey there! Let's talk about something cool \ud83d\udd25"
+        "message": "Heya! What brings you here today? \ud83d\ude04 \n Great question! Give me a moment to gather what I know... \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
     },
     {
         "role": "prompter",
-        "message": "skibido"
+        "message": "nice, im vince btw"
     },
     {
         "role": "bot",
-        "message": "You're speaking fluent Gen Z \ud83d\udd25 That mood is so relatable rn \ud83d\ude2d"
+        "message": "Oki btw, let's vibe \ud83e\udd1d"
     },
     {
         "role": "prompter",
-        "message": "what is skebido?"
+        "message": "byi"
     },
     {
         "role": "bot",
-        "message": "You're speaking fluent Gen Z \ud83d\udd25 You got that unspoken rizz, I see you \ud83d\ude0e \n Let me try to explain that... \n You\u2019ve entered the Skibidi dimension."
+        "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728."
     },
     {
         "role": "prompter",
-        "message": "how about xizz?"
+        "message": "nice im vince"
     },
     {
         "role": "bot",
-        "message": "Heyyy! What's cookin'? \ud83d\udc4b You're speaking fluent Gen Z \ud83d\udd25 Lowkey feel that. Highkey too tho \ud83d\udc40 \n That seems like something I can help with. Here's what I know: \n You're not just rizzing \u2014 you're leading a charisma cult."
+        "message": "hmmm sorry what?, i cant specify your name \ud83d\ude17"
     },
     {
         "role": "prompter",
-        "message": "im san"
+        "message": "im vince"
     },
     {
         "role": "bot",
-        "message": "you don\u2019t need to have it all figured out rn \ud83d\udd70\ufe0f"
+        "message": "hmmm sorry what?, i cant specify your name \ud83d\ude17"
     },
     {
         "role": "prompter",
-        "message": "iloveyuo"
-    },
-    {
-        "role": "bot",
-        "message": "yo this is amazinggg \ud83d\ude0d"
-    },
-    {
-        "role": "prompter",
-        "message": "iloveyou"
-    },
-    {
-        "role": "bot",
-        "message": "You\u2019ve got good taste! \ud83d\udd25"
-    },
-    {
-        "role": "prompter",
-        "message": "good mroning"
-    },
-    {
-        "role": "bot",
-        "message": "Hello hello! Ready to chat? \ud83d\udcac"
-    },
-    {
-        "role": "prompter",
-        "message": "mroning good"
-    },
-    {
-        "role": "bot",
-        "message": "Wassup! Hit me with your thoughts \ud83d\udcad"
-    },
-    {
-        "role": "prompter",
-        "message": "good bye"
-    },
-    {
-        "role": "bot",
-        "message": "Good day to you! \ud83c\udf1f"
-    },
-    {
-        "role": "prompter",
-        "message": "ok bye"
-    },
-    {
-        "role": "bot",
-        "message": "Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
-    },
-    {
-        "role": "prompter",
-        "message": "can you introduce yoursel?"
-    },
-    {
-        "role": "bot",
-        "message": "You're speaking fluent Gen Z \ud83d\udd25 Okay slayyy \ud83d\udc85\ud83d\udcaf \n Let me try to explain that... \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
+        "message": "byi"
     },
     {
         "role": "bot",
@@ -109,51 +53,43 @@
     },
     {
         "role": "prompter",
-        "message": "can you introduce yoursel?"
+        "message": "im vince"
     },
     {
         "role": "bot",
-        "message": "\n That seems like something I can help with. Here's what I know: \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
+        "message": "hmmm sorry what?, i cant specify your name \ud83d\ude17"
     },
     {
         "role": "prompter",
-        "message": "who are you?"
+        "message": "im vince btw"
     },
     {
         "role": "bot",
-        "message": "\n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+        "message": "hmmm sorry what?, i cant specify your name \ud83d\ude17"
     },
     {
         "role": "prompter",
-        "message": "bye"
+        "message": "byi"
     },
     {
         "role": "bot",
-        "message": "Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
+        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
     },
     {
         "role": "prompter",
-        "message": "who are you?"
+        "message": "im vince"
     },
     {
         "role": "bot",
-        "message": "\n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
+        "message": "Oki vince, let's vibe \ud83e\udd1d"
     },
     {
         "role": "prompter",
-        "message": "bye"
+        "message": "im vince nice"
     },
     {
         "role": "bot",
-        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
-    },
-    {
-        "role": "prompter",
-        "message": "who are you?"
-    },
-    {
-        "role": "bot",
-        "message": "\n Great question! Give me a moment to gather what I know... \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
+        "message": "Nice to meet you, vince! \ud83e\udee1"
     },
     {
         "role": "prompter",
@@ -161,15 +97,15 @@
     },
     {
         "role": "bot",
-        "message": "Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
+        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
     },
     {
         "role": "prompter",
-        "message": "see yah"
+        "message": "byi"
     },
     {
         "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
+        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
     },
     {
         "role": "prompter",
@@ -177,103 +113,15 @@
     },
     {
         "role": "bot",
-        "message": "Heya! What brings you here today? \ud83d\ude04"
+        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
     },
     {
         "role": "prompter",
-        "message": "good bye"
+        "message": "goodbyi"
     },
     {
         "role": "bot",
-        "message": "Good day to you! \ud83c\udf1f"
-    },
-    {
-        "role": "prompter",
-        "message": "bruh bye"
-    },
-    {
-        "role": "bot",
-        "message": "Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
-    },
-    {
-        "role": "prompter",
-        "message": "adios"
-    },
-    {
-        "role": "bot",
-        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
-    },
-    {
-        "role": "prompter",
-        "message": "im going to japan?"
-    },
-    {
-        "role": "bot",
-        "message": "Hello hello! Ready to chat? \ud83d\udcac \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c Nature hits different \u2014 try hiking a mountain sometime \ud83c\udfd4\ufe0f"
-    },
-    {
-        "role": "prompter",
-        "message": "im going to japan"
-    },
-    {
-        "role": "bot",
-        "message": "Wassup! Hit me with your thoughts \ud83d\udcad Nothing Beats A Jet2 Holiday!, And Right Now You Can Save Of \u00a350 Per Person!, That's \u00a3200 Off For A Family Of 4!"
-    },
-    {
-        "role": "prompter",
-        "message": "adios"
-    },
-    {
-        "role": "bot",
-        "message": "Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
-    },
-    {
-        "role": "prompter",
-        "message": "on my way to japan"
-    },
-    {
-        "role": "bot",
-        "message": "Ever been to a beach at 6AM? Game changer \ud83c\udf05"
-    },
-    {
-        "role": "prompter",
-        "message": "on my way"
-    },
-    {
-        "role": "bot",
-        "message": "Nature hits different \u2014 try hiking a mountain sometime \ud83c\udfd4\ufe0f"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
-    },
-    {
-        "role": "prompter",
-        "message": "good bye"
-    },
-    {
-        "role": "bot",
-        "message": "Time to dip \u2014 it's been real, no cap \ud83e\udef1\ud83d\udd25."
-    },
-    {
-        "role": "prompter",
-        "message": "good byi"
-    },
-    {
-        "role": "bot",
-        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
+        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
     },
     {
         "role": "prompter",
@@ -281,798 +129,46 @@
     },
     {
         "role": "bot",
-        "message": "Good day to you! \ud83c\udf1f"
-    },
-    {
-        "role": "prompter",
-        "message": "wassup, can you tellme about yourself?"
-    },
-    {
-        "role": "bot",
-        "message": "Howdy partner \ud83e\udd20 \n Let me try to explain that... \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
-    },
-    {
-        "role": "prompter",
-        "message": "nice"
-    },
-    {
-        "role": "bot",
-        "message": "That\u2019s a wholesome thing to say \ud83d\udc96"
-    },
-    {
-        "role": "prompter",
-        "message": "hmmm whats an abi? in programming?"
-    },
-    {
-        "role": "bot",
-        "message": "\n You're asking about something interesting \u2014 let's dive in! \n APIs are like the glue that holds frontend and backend together \u2014 total BFFs \ud83d\udc85."
-    },
-    {
-        "role": "prompter",
-        "message": "goodmrning"
-    },
-    {
-        "role": "bot",
-        "message": "Good day to you! \ud83c\udf1f"
-    },
-    {
-        "role": "prompter",
-        "message": "goodevryone"
-    },
-    {
-        "role": "bot",
         "message": "Heyyy! What's cookin'? \ud83d\udc4b"
     },
     {
         "role": "prompter",
-        "message": "goodbyi"
+        "message": "goodmroning"
+    },
+    {
+        "role": "bot",
+        "message": "Hey there! Let's talk about something cool \ud83d\udd25"
+    },
+    {
+        "role": "prompter",
+        "message": "hello there!!, im not haimonmon, im vince btw"
+    },
+    {
+        "role": "bot",
+        "message": "Remembering that name, vince \ud83e\udde0"
+    },
+    {
+        "role": "prompter",
+        "message": "bye"
+    },
+    {
+        "role": "bot",
+        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
+    },
+    {
+        "role": "prompter",
+        "message": "hello , whats an api?"
+    },
+    {
+        "role": "bot",
+        "message": "Heyyy! What's cookin'? \ud83d\udc4b \n You're asking about something interesting \u2014 let's dive in! \n APIs = Application Programming Interface. Fancy term, simple idea: data in, data out."
+    },
+    {
+        "role": "prompter",
+        "message": "ok goodbye"
     },
     {
         "role": "bot",
         "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728."
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Howdy partner \ud83e\udd20 \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Good day to you! \ud83c\udf1f \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Hi there! Hope you're vibin' today \ud83c\udf1e \n You're asking about something interesting \u2014 let's dive in! \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
-    },
-    {
-        "role": "prompter",
-        "message": "bybybye"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "ok"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "hello"
-    },
-    {
-        "role": "bot",
-        "message": "Yo yo yo! What's on your mind today?"
-    },
-    {
-        "role": "prompter",
-        "message": "whats up"
-    },
-    {
-        "role": "bot",
-        "message": "\n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Wassup! Hit me with your thoughts \ud83d\udcad \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "good byi"
-    },
-    {
-        "role": "bot",
-        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
-    },
-    {
-        "role": "prompter",
-        "message": "whats up"
-    },
-    {
-        "role": "bot",
-        "message": "\n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Yo! Wassup? \ud83d\ude0e \n Great question! Give me a moment to gather what I know... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Heya! What brings you here today? \ud83d\ude04 \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "Not ghosting \u2014 just vanishing for character development \ud83d\udcab."
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Yo yo yo! What's on your mind today? \n That seems like something I can help with. Here's what I know: \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "see"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "seeya"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "ngl that one lost me... try again? \ud83d\udc40"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "good byi"
-    },
-    {
-        "role": "bot",
-        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
-    },
-    {
-        "role": "prompter",
-        "message": "see you"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "ngl that one lost me... try again? \ud83d\udc40"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
-    },
-    {
-        "role": "prompter",
-        "message": "good byi"
-    },
-    {
-        "role": "bot",
-        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
-    },
-    {
-        "role": "prompter",
-        "message": "good bye"
-    },
-    {
-        "role": "bot",
-        "message": "I'm out. May your bandwidth be strong and your vibes immaculate \ud83d\udce1\u2728."
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "bruh... say that again but like, human pls \ud83d\ude05"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "you're wildin' rn, idk what that means \ud83d\udc80"
-    },
-    {
-        "role": "prompter",
-        "message": "see you"
-    },
-    {
-        "role": "bot",
-        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "uhh what now? \ud83e\udd28"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "not me sitting here confused af \ud83d\ude2d"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "huh? that ain't in my dictionary \ud83e\uddcd\u200d\u2642\ufe0f"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "not me sitting here confused af \ud83d\ude2d"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "not me sitting here confused af \ud83d\ude2d"
-    },
-    {
-        "role": "prompter",
-        "message": "lol"
-    },
-    {
-        "role": "bot",
-        "message": "you're wildin' rn, idk what that means \ud83d\udc80"
-    },
-    {
-        "role": "prompter",
-        "message": "whats your name?"
-    },
-    {
-        "role": "bot",
-        "message": "huh? that ain't in my dictionary \ud83e\uddcd\u200d\u2642\ufe0f"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "ok"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "book"
-    },
-    {
-        "role": "bot",
-        "message": "Ah, books - Such a peaceful topic, I respect that \ud83c\udf05"
-    },
-    {
-        "role": "prompter",
-        "message": "ook"
-    },
-    {
-        "role": "bot",
-        "message": "Ah, books - Such a peaceful topic, I respect that \ud83c\udf05"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "yo that went way over my head \ud83d\ude35\u200d\ud83d\udcab"
-    },
-    {
-        "role": "prompter",
-        "message": "yah"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "ngl that one lost me... try again? \ud83d\udc40"
-    },
-    {
-        "role": "prompter",
-        "message": "see you"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "seeya"
-    },
-    {
-        "role": "bot",
-        "message": "uhh what now? \ud83e\udd28"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "i'm not built for that kinda question fr \ud83d\udc80"
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "bruh... say that again but like, human pls \ud83d\ude05"
-    },
-    {
-        "role": "prompter",
-        "message": "see bye"
-    },
-    {
-        "role": "bot",
-        "message": "That convo was elite. Peace and blessings \ud83d\udcc9\u2728."
-    },
-    {
-        "role": "prompter",
-        "message": "see"
-    },
-    {
-        "role": "bot",
-        "message": "bruh... say that again but like, human pls \ud83d\ude05"
-    },
-    {
-        "role": "prompter",
-        "message": "see you"
-    },
-    {
-        "role": "bot",
-        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
-    },
-    {
-        "role": "prompter",
-        "message": "see you"
-    },
-    {
-        "role": "bot",
-        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "Vanishing with gratitude and rizz \ud83d\udcbc\u270c\ufe0f."
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "see"
-    },
-    {
-        "role": "bot",
-        "message": "i'm not built for that kinda question fr \ud83d\udc80"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "not me sitting here confused af \ud83d\ude2d"
-    },
-    {
-        "role": "prompter",
-        "message": "goodbyi see you everyne"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
-    },
-    {
-        "role": "prompter",
-        "message": "everyone"
-    },
-    {
-        "role": "bot",
-        "message": "wait wha- \ud83d\ude33 say it slower maybe?"
-    },
-    {
-        "role": "prompter",
-        "message": "good byi and see yah"
-    },
-    {
-        "role": "bot",
-        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
-    },
-    {
-        "role": "prompter",
-        "message": "see yoi"
-    },
-    {
-        "role": "bot",
-        "message": "yo that went way over my head \ud83d\ude35\u200d\ud83d\udcab"
-    },
-    {
-        "role": "prompter",
-        "message": "ok bye"
-    },
-    {
-        "role": "bot",
-        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
-    },
-    {
-        "role": "prompter",
-        "message": "lol"
-    },
-    {
-        "role": "bot",
-        "message": "feelings aren\u2019t facts \u2014 ride them out \ud83d\udef6"
-    },
-    {
-        "role": "prompter",
-        "message": "goodbyi"
-    },
-    {
-        "role": "bot",
-        "message": "May your skincare be flawless and your hustle strong \ud83d\udc85\ud83d\udcc8."
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
-    },
-    {
-        "role": "prompter",
-        "message": "seeyah"
-    },
-    {
-        "role": "bot",
-        "message": "yo that went way over my head \ud83d\ude35\u200d\ud83d\udcab"
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "Clocking out. Until we link again \ud83e\uddd8\ud83c\udf31."
-    },
-    {
-        "role": "prompter",
-        "message": "whats up?"
-    },
-    {
-        "role": "bot",
-        "message": "Yo! Wassup? \ud83d\ude0e \n Let me try to explain that... \n Nvm I can't find any info about it, lmfao \ud83d\udc80\ud83d\udc4c"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "my brain just blue-screened bro \ud83d\udcbb\ud83d\udca5"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
-    },
-    {
-        "role": "prompter",
-        "message": "ok"
-    },
-    {
-        "role": "bot",
-        "message": "uhh what now? \ud83e\udd28"
-    },
-    {
-        "role": "prompter",
-        "message": "ook"
-    },
-    {
-        "role": "bot",
-        "message": "Ah, books - Ooo I love that too \ud83c\udf38"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off. It\u2019s brb not goodbye \ud83c\udf6a\ud83e\udde0."
-    },
-    {
-        "role": "prompter",
-        "message": "goodbyi and thank you"
-    },
-    {
-        "role": "bot",
-        "message": "yo this is amazinggg \ud83d\ude0d"
-    },
-    {
-        "role": "prompter",
-        "message": "can you tell me about yourself?"
-    },
-    {
-        "role": "bot",
-        "message": "\n Great question! Give me a moment to gather what I know... \n Mid detected \ud83d\ude36"
-    },
-    {
-        "role": "prompter",
-        "message": "byi"
-    },
-    {
-        "role": "bot",
-        "message": "Disappearing like your motivation on a Monday. Stay safe \ud83d\udc51."
-    },
-    {
-        "role": "prompter",
-        "message": "see yah"
-    },
-    {
-        "role": "bot",
-        "message": "Farewell, bestie. Spiraling respectfully \ud83d\ude43."
-    },
-    {
-        "role": "prompter",
-        "message": "me"
-    },
-    {
-        "role": "bot",
-        "message": "uhh what now? \ud83e\udd28"
-    },
-    {
-        "role": "prompter",
-        "message": "who are you?"
-    },
-    {
-        "role": "bot",
-        "message": "\n Let me try to explain that... \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
-    },
-    {
-        "role": "prompter",
-        "message": "introduce yourself"
-    },
-    {
-        "role": "bot",
-        "message": "yo that went way over my head \ud83d\ude35\u200d\ud83d\udcab"
-    },
-    {
-        "role": "prompter",
-        "message": "can you introduce yourself?"
-    },
-    {
-        "role": "bot",
-        "message": "\n Great question! Give me a moment to gather what I know... \n I'm Dizzy youre personal chatbot, i can response to a formal message or even gen z messages \u2728"
-    },
-    {
-        "role": "prompter",
-        "message": "i love japan <3"
-    },
-    {
-        "role": "bot",
-        "message": "You're spreading good energy, keep it up \ud83c\udf08 Wanna plan a virtual getaway? I got recs \ud83c\udf0d"
-    },
-    {
-        "role": "prompter",
-        "message": "UwU"
-    },
-    {
-        "role": "bot",
-        "message": "not me sitting here confused af \ud83d\ude2d"
-    },
-    {
-        "role": "prompter",
-        "message": "I love japan"
-    },
-    {
-        "role": "bot",
-        "message": "You're spreading good energy, keep it up \ud83c\udf08 Ever been to a beach at 6AM? Game changer \ud83c\udf05"
-    },
-    {
-        "role": "prompter",
-        "message": "i love dogs"
-    },
-    {
-        "role": "bot",
-        "message": "You\u2019ve got good taste! \ud83d\udd25"
-    },
-    {
-        "role": "prompter",
-        "message": "i love cows"
-    },
-    {
-        "role": "bot",
-        "message": "Aww, you're vibing! Love that for you \u2764\ufe0f"
-    },
-    {
-        "role": "prompter",
-        "message": "meh i hate those"
-    },
-    {
-        "role": "bot",
-        "message": "you're wildin' rn, idk what that means \ud83d\udc80"
-    },
-    {
-        "role": "prompter",
-        "message": "bye"
-    },
-    {
-        "role": "bot",
-        "message": "Retreating to recharge my social battery \ud83d\udd0b\ud83e\udee5."
-    },
-    {
-        "role": "prompter",
-        "message": "im feeling"
-    },
-    {
-        "role": "bot",
-        "message": "life's good rn \ud83d\udcab you don\u2019t need to have it all figured out rn \ud83d\udd70\ufe0f"
-    },
-    {
-        "role": "prompter",
-        "message": "im feeling down"
-    },
-    {
-        "role": "bot",
-        "message": "life's good rn \ud83d\udcab you're allowed to feel this way \ud83e\udef6"
-    },
-    {
-        "role": "prompter",
-        "message": "see ya"
-    },
-    {
-        "role": "bot",
-        "message": "Logging off with the elegance of a Windows shutdown sound. \ud83e\udee1"
     }
 ]

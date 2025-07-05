@@ -6,60 +6,44 @@ import requests
 from typing import List, Dict
 
 from .memory import remember_message, get_knowledge, add_knowledge
-from .correction import tokenization
+from .correction import tokenization, join_keywords
 
 
-def get_online_data(word: str) -> List:
-    """ gets the word meaning and pos from online api"""
-    url_dictionary_link = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word.lower()}"
+def is_name(tokenized_prompt: List[str]) -> None:
+    """ Checks if the word exist on vocab """
+    knowledge: Dict = get_knowledge("greets.json")
+    combined_keywords: List[str] = join_keywords(knowledge)
 
-    try:
-        response = requests.get(url_dictionary_link)
+    detected_name: str = None
 
-        if response.status_code != 200:
-            return None
+    for prompt in tokenization(tokenized_prompt):
+        if prompt in combined_keywords:
+            continue
+        
+        detected_name = prompt
 
-        return response.json()
-    except Exception as e:
-        return None
+    return detected_name
+        
 
+def know_prompter_name(tokenized_prompt: List[str]) -> str:
+    """ Remember user name """
+    prompter_info: Dict = get_knowledge("prompter_info.json")
 
-def learn_prompt_pos(prompt: str) -> None:
-    """ learn each words on the sentence by their parts of speech """
-    token: List = tokenization(prompt=prompt)
-    learned_word: Dict = get_knowledge(file_name="pos.json")
+    name = is_name(tokenized_prompt)
 
-    if "not_defined" not in learned_word:
-        learned_word["not_defined"] = []
-
-    for word in token:
-        if word not in learned_word:
-            if word in ['.',';',':','!','?',',']:
-                continue
-
-            dictionary = get_online_data(word = word)
-            learned_word[word] = []
-
-            if not dictionary and word not in learned_word["not_defined"]:
-                learned_word["not_defined"].append(word)
-                continue
-            
-            for data in dictionary:
-                for meaning in data["meanings"]:
-                    if meaning["partOfSpeech"] not in learned_word[word]:
-                        learned_word[word].append(meaning["partOfSpeech"])
-
-    add_knowledge(file_name = "pos.json", info = learned_word)
+    if name:
+        prompter_info["name"] = name
+        add_knowledge("prompter_info.json", info = prompter_info)
+    
+    # print("tokenzied: ", name)
+    return name
 
 
-def learn_word(word) -> str:
+def know_prompter_likes() -> None:
     pass
 
 
 if __name__ == "__main__":
     sentence: str = ""
 
-    learn_prompt_pos(prompt = sentence)
-
-
-
+    print(know_prompter_name(tokenized_prompt = tokenization("Im ")))

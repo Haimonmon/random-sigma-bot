@@ -9,6 +9,7 @@ folder_directory = r"sigma/chats/"
 def create_new_file(file_name) -> None:
     pass
 
+
 def load_file(file_name: str) -> List:
     """ Loads data on the specified json file name. """
     with open(file_name, "r", encoding="utf-8") as file:
@@ -21,7 +22,7 @@ def save_file(file_name: str, data: Any) -> None:
         json.dump(data, file, indent = 4)
 
 
-def get_knowledge(file_name: Literal["greets.json", "almanac.json", "interrogatives.json"]) -> Dict:
+def get_knowledge(file_name: Literal["greets.json", "almanac.json", "curious.josn", "pos.josn", "prompter_info.json"]) -> Dict:
     """ loads known keywords and responses from the knowledge folder """
     return load_file(file_name = f"sigma/knowledge/{file_name}")
 
